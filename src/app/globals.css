@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --color-pri-orange: #e68032;
+    --color-pri-brown: #4A332F;
+    --color-im-orange: #c8693a;
+    --color-dim-pink: #fff7ed;
+
+    --font-cormorant: 'Cormorant Garamond', serif;
+    --font-lora: var(--font-lora);
+    --font-cinzel-decorative: var(--font-cinzel-decorative);
+    --font-cinzel: var(--font-cinzel);
+
+    --font-playfair: var(--font-playfair);
+}
+
+/* Custom utilities */
+.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.right-card-buddha-life::before {
+    @apply absolute content-[""] opacity-50 -z-1 top-[69.4%] -right-[8%] size-50 bg-[url(/lotus/buddh_1.png)] bg-center bg-no-repeat bg-contain;
+}

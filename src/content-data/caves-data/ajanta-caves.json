@@ -1,0 +1,28 @@
+{
+  "name": "Ajanta Caves Tour",
+  "para": [
+    "The Ajanta caves, which lies 108 kilometers from the city of Aurangabad in Maharashtra, are the finest examples of the earliest form of Buddhism in India along with the superb Buddhist architecture, panoramic cave paintings and creative sculptures. The Ajanta caves, mainly venerated to the Lord Buddha and His several reincarnations, belongs to the period from 200 BCE to 250 CE. The caves, 30 in number, which were first discovered accidentally in 1819 by a British army officer, John Smith, comprises numerous Buddhist monasteries, shrines and temples.",
+
+    "The Ajanta Caves can be categorised into mainly two categories",
+
+    "Phase I",
+    "2nd century BCE to 1st century BCE.",
+    "Caves 9 and cave 10 - Chaitya halls or shrines",
+    "Caves 12 and cave 13 - Viharas or monasteries",
+    "In these caves, as per the early Theravadin doctrines, the Buddha has been represented through symbols.",
+
+    "Phase II",
+    "5th century CE to 6th century CE.",
+    "Cave 19, cave 26 and cave 29 - Chaitya halls or shrines",
+    "Caves 1 to 7, cave 11, caves 14 to 18, caves 20 to 25, cave 27 and cave 28 - Viharas or monasteries",
+    "Cave 8 and others - Unfinished caves.",
+    "In these caves, as per the Mahayana thoughts, the Buddha has been depicted in physical forms."
+  ],
+  "architecture" : ["All the 30 Buddhist caves, named as Ajanta caves, are the excellent examples the earliest Buddhist architecture, cave paintings and sculptures. The Ajanta caves, comprising mainly chaitya halls and monasteries, were used by the Buddhist monks for their residential and meditative purposes",
+  "The monks, who lived in these caves, used simple tools like hammer and chisel to carve out the images of the Buddha and His reincarnations, and Jataka stories in the walls of these caves. The caves used as chaitya or prayer halls presents a well defined form of architecture based on religion. For example, the cave 17, a monastery, comprises a number of wall paintings related to the Buddha in 8 rows, Indra flying in the sky accompanied by beautiful dancers, the Buddha subduing an elephant, Nalagiri, and several other scenes related to the Jataka stories. The paintings of the Ajanta caves also include a variety of designs, scrollwork, geometric patterns, miniature seated Buddhas, dream of the Buddha's mother Maya and the birth of the Buddha and procession of female devotees carrying offerings for the infant Buddha."],
+  "getThere": {
+      "air": "The nearest airport is at Aurangabad, 108 kilometers away",
+      "rail": "The nearest rail head from the Ajanta caves is at a Jalgaon, 58 kilometers away, on the Central railways line. The Jalgaon rail head is connected to different cities directly such as Mumbai and Manmad",
+      "road": "A proper and well maintained road connects Aurangabad to Ajanta. One can take state transport and other buses from Aurangabad(108 km), Mumbai(400 km) and Jalagaon(58 km) to reach the Ajanta caves"
+  }
+}

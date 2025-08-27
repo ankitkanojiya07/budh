@@ -1,0 +1,60 @@
+{
+  "name": "India - The Land of Buddha",
+  "duration": "12 Nights / 13 Days",
+  "link": "/land-of-buddha-tour",
+  "destination": "Mumbai - Aurangabad - Bhopal - Agra - Varanasi - Bodhgaya - Patna - Gorakhpur - Balrampur - Lucknow - Delhi",
+  "sketchProgram": [
+    {
+      "day": "Day 01 - Arrive Mumbai",
+      "desc": "Arrive Mumbai. Meeting and assistance on arrival and transfer to hotel. Overnight at hotel."
+    },
+    {
+      "day": "Day 02 - Mumbai - Aurangabad",
+      "desc": "Transfer to airport in time to connect flight for Aurangabad. Meeting and assistance on arrival and transfer to hotel. Afternoon visit to Ellora Caves. Overnight at hotel."
+    },
+    {
+      "day": "Day 03 - Aurangabad - Bhopal",
+      "desc": "Full day trip to Ajanta Caves. Later transfer to Jalgaon railway station to connect train for Bhopal. Overnight in train."
+    },
+    {
+      "day": "Day 04 - Bhopal - Agra",
+      "desc": "On arrival visit Sanchi. Later transfer to railway station to connect train for Agra. On arrival transfer to hotel. Overnight at hotel."
+    },
+    {
+      "day": "Day 05 - Agra - Varanasi",
+      "desc": "Morning sightseeing of the city, later transfer to airport to connect flight for Varanasi. Meeting and assistance on arrival and transfer to hotel. Overnight at hotel."
+    },
+    {
+      "day": "Day 06 - Varanasi - Bodhgaya",
+      "desc": "Early morning boat ride on river Ganges. Later leave for Bodhgaya, enroute visiting Sarnath. Overnight at hotel."
+    },
+    {
+      "day": "Day 07 - Bodhgaya",
+      "desc": "Visit to Mahabodhi Temple and Niranjana river.. Overnight at hotel."
+    },
+    {
+      "day": "Day 08 - Bodhgaya - Patna",
+      "desc": "Leave for Patna enroute visiting Rajgir and Nalanda. Overnight at hotel."
+    },
+    {
+      "day": "Day 09 - Patna - Gorakhpur",
+      "desc": "Leave for Kushinagar by surface enroute visiting Vaishali. Overnight at hotel."
+    },
+    {
+      "day": "Day 10 - Gorakhpur - Balrampur",
+      "desc": "Leave for Balrampur enroute visiting Lumbini the birth place of Buddha. Overnight at hotel.."
+    },
+    {
+      "day": "Day 11 - Balrampur - Lucknow",
+      "desc": "Leave for Lucknow enroute visiting Sravasti. Transfer to airport to connect flight for Delhi. Overnight at hotel.."
+    },
+    {
+      "day": "Day 12 - Delhi",
+      "desc": "Full day sightseeing of New and Old Delhi. Overnight at hotel.."
+    },
+    {
+      "day": "Day 13 - Leave Delhi",
+      "desc": "Transfer to airport to connect flight for onward journey."
+    }
+  ]
+}

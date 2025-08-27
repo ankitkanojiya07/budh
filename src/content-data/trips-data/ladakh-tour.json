@@ -1,0 +1,10 @@
+{
+  "name": "Ladakh Tour",
+  "mainDesc": "Ladakh (The little Tibet) , A land which can be described only in Speculative Expanse - Geographical, historical and human factors have endowed this region, known earlier as Manyul - the land of men - with its unique character and place in the World",
+  "para": ["Bounded By two of the world's mightiest mountain ranges, the Great Himalaya & the karakoram, it lies at altitudes ranging from about 9,000 feet (2,750 m) at Kargil to 25,170 feet (7,672 m) at Saser Kangri in the Karakoram. Thus summer temperatures rarely exceed about 27°C in the shade, while in winter they may plummet to minus 20°C even in Leh.", "The approach to a Buddhist village is invariably marked by mani walls which are long chest -high structures faced with engraved stones bearing the mantra 'om mane padme hum' and by chorten, commemorative cairns, like stone pepper-pots. Many villages are crowned with a gompa or monastery which may be anything from an imposing complex of temples , prayer halls & monk's dwellings, to a tiny hermitage housing a single image & home to a solitary lama."],
+  "getThere": {
+    "air": "Leh is well connected by Srinagar, Chandigarh, Jammu & with New Delhi by scheduled Indian and Jet Airways flights.",
+    "rail": "The nearest railway links is from Chandigarh which is 923 Kms. away.",
+    "road": "One can enter Leh from Manali which is 473 Kms. away and from Srinagar which is 434 Kms. away "
+  }
+}

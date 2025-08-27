@@ -1,0 +1,12 @@
+{
+  "name": "Karla Caves Tour",
+  "location": "Karla, approximately 20 km from Lonavla",
+  "foundedIn": "2nd Century BC Chaitya Hall, intricate sculptures and pillars",
+  "para": ["Karla Caves are situated in the state of Maharashtra, near the Pune-Mumbai Road. They lie at a distance of approximately 20 km from Lonavla and 40 km from Pune. The caves of Karla date back to the 2nd century BC and are known for their Chaitya Hall, intricate sculptures and pillars with ingenious architecture. Chaitya hall boasts of its amazing structural design. The rooftop is built of teakwood and even the pillars have been beautifully carved.",
+  "One of the pillars of Karla Caves, with four lions at the top, now forms the national emblem of India. A number of sculptures cut out of rock, based on numerous animals as well as different forms of human life, adorn the caves of Karla. The other attractions include a stone stupa and 37 pillars, chiseled with the figures of prosperous men and women on elephants, prostrating before Lord Buddha. The bouncing sunshine falling inside the shrine further lends it a mystic as well as a tranquil aura."],
+  "getThere": {
+    "air": "The nearest airport is that of Pune airport, situated at a distance of 55 km from Karla.",
+    "rail": "The local railway station of Malavil is only 5 km away. Apart from that, there is the Pune railway station, well connected with all the major cities of India.",
+    "road": "Buses plying between Pune and Mumbai go via Karla only. One can also hire private vehicles for the purpose"
+  }
+}

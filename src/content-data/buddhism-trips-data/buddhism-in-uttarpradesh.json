@@ -1,0 +1,34 @@
+{
+  "name": "Buddhism in Uttar Pradesh",
+  "significance": ["Bestowed with a unique heritage and cultural traditions gathered through the ages, the land of Uttar Pradesh has also been graced by many a luminous personalities. Prominent among those who traversed the land was Lord Buddha. Known as the first missionary of spirituality, Buddha lived and preached in Uttar Pradesh and thus made the land as the 'Cradle of Buddhism'. He went beyond rituals, encouraging kings and the masses to look at their immortal identity, and to rise above the shackles of desire, longing, suffering and death. It is worth mentioning that He taught and travelled extensively in Uttar Pradesh-- Kapilvastu (where Lord Buddha spent his early years), Sarnath (where Lord Buddha, having attained enlightenment delivered his first sermon), Shravasti (where Lord Buddha spent 24 monsoons), Kaushambhi (where Lord Buddha visited in the 6th and 9th year after attaining the enlightenment), Sankisa (where Lord Buddha descended after giving sermon to his mother in heaven) and Kushinagar (where Lord Buddha left his corporeal self and attained Mahaparinirvana) are witness to this great spiritual Lord who soothes the world with a message of peace-'Be our own light'."],
+  "otherOpts": [
+    {
+      "name": "Kapilavastu Tour",
+      "link": "tours/kapilvastu"
+    },
+    {
+      "name": "Kaushambi Tour",
+      "link": "tours/kaushambi"
+    },
+    {
+      "name": "Mathura Tour", 
+      "link": "tours/mathura"
+    },
+    {
+      "name": "Prabhosa Tour",
+      "link": "tours/prabhosa"
+    },
+    {
+      "name": "Sravasti Tour",
+      "link": "tours/sravasti"
+    },
+    {
+      "name": "Varanasi Tour",
+      "link": "tours/varanasi"
+    },
+    {
+      "name": "Allahabad Tour",
+      "link": "tours/allahabad"
+    }
+  ]
+}

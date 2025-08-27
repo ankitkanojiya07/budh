@@ -1,0 +1,12 @@
+{
+  "name": "Junnar Caves Tour",
+  "location": "Approximately 177 km from Mumbai",
+  "foundedIn": "2nd Century BC to 3rd Century AD",
+  "para": ["Junnar caves are situated in the Aurangabad district of Maharashtra. They lie at a distance of approximately 177 km from the city of Mumbai, on the Mumbai-Aurangabad route. There are three major groups of caves in the hills surrounding Junnar plains, of which the most prominent ones are Tulija Lena and the Ganesh Lena. All of the Junnar caves, situated in India, were founded somewhere between 2nd Century BC and 3rd Century AD.",
+  "The first group of caves, the Tulija Lena, consists of the Chaitya hall, adorned with a circular dome ceiling. The second group is situated near the Manmodi hills is archaeologically quite significant. Archaeologists visit these caves on a frequent basis, to testify the sculptures and images in the caves. The third group of caves, known as Ganesh Lena, is approximately 4 km to the south of Junnar. This group consists of a number of small cells and viharas, with most popular ones being the Chaitya Cave No. 6 and the Ganesh Lena Vihara."],
+  "getThere": {
+    "air": "The nearest airport from Junnar is at Mumbai, approximately 177 km away",
+    "rail": "The nearest railway station is also that of Mumbai, which is well connected with all the key cities.",
+    "road": " Junnar caves lie on the Mumbai-Aurangabad route and are regularly serviced by coaches, buses and private taxis."
+  }
+}

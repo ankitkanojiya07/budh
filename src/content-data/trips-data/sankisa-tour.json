@@ -1,0 +1,12 @@
+{
+  "name": "Sankisa Tour",
+  "mainDesc": "Sankisa lies in central Uttar Pradesh, 47 kms from Farrukhabad. It is believed to be the place where Buddha, along with Brahma and Devraj Indra descended after giving sermons to his mother in heaven.",
+  "para": [
+    "At the spot of descent stands a temple with a statue of the Buddha. The place is also known for a temple dedicated to Bisari Devi and an excavated Ashokan Elephant Pillar.",
+    "There is also a colossal Shiva Linga here. A large fair is held at Sankisa in the month of Shravan (July-August)."
+  ],
+  "getThere": {
+    "air": "Nearest airport is Agra.",
+    "road": "46 Kms. Diversion from Kanpur highway if traveling to Agra or vice-versa"
+  }
+}

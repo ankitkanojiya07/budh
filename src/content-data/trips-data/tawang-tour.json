@@ -1,0 +1,38 @@
+{
+  "name": "Tawang Tour",
+  "mainDesc": "Tawang is an administrative district of Arunachal Pradesh with its headquarters located at Tawang town. The district is situated on the Northwest extremity of Arunachal Pradesh. The district is surrounded by Tibet in the North-East, Bhutan in South-West and West, Kameng district in the South East. The district derives its name from Tawang Monastery which is located on a hill top.",
+  "para": [
+    "Tawang is the hidden paradise on earth. Perched on ridges and surrounded by thick forests the district has majestic monasteries, lakes and distinct hamlets. Some worth visiting sites are yet to be explored."
+  ],
+  "majorBuddhistAttraction": [
+    {
+      "title": "Monasteries",
+      "desc": "Tawang Monasteries, Urgelling, Gorsam, Taktsang (Tiger's Den), Oldbazar Gompa, Rigyalling Gompa"
+    },
+    {
+      "title": "Nunneries",
+      "desc": "Singsur Ani Gompa, Brama Dung Chung Ani Gompa, Gyangong Ani Gompa"
+    },
+    {
+      "title": "Lakes",
+      "desc": "P.T.TSO Lake (Pankang Teng Tso), Sangetser Lake, Jo-Nga-Tseir, Banggachang Lake"
+    },
+    {
+      "title": "Peaks",
+      "desc": "Sela, Gorichen, Geshila"
+    },
+    {
+      "title": "Hot Springs",
+      "desc": "Thingbu, Tsachu"
+    },
+    {
+      "title": "Other Places",
+      "desc": "Jaswant Garh, Tawang War Memorial, Manjushree Vidyapeeth, Craft Center"
+    }
+  ],
+  "getThere": {
+    "rail": "Nearest Rail Head: Bhalukpong 285 km from Tawang.",
+    "air": "Nearest Airport: Tezpur 345 km from Tawang.",
+    "road": "One can reach Tawang from various parts of the country via Guwahati and Tezpur in Assam."
+  }
+}

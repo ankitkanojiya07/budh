@@ -1,0 +1,71 @@
+{
+  "name": "Bodhgaya Tour",
+  "destination": "Delhi- Patna - Bodhgaya - Varanasi- Lucknow - Delhi",
+  "duration": "10 Days",
+  "mainDesc": "Bodhgaya: in the state of Bihar, reckoned as the most important Buddhist pilgrimage center, is the place where Lord Sakyamuni (Gautam Buddha) entered into mediation after being moved by the sufferings of mankind. The giant Bodhi Tree (Peepal) that we see today is believed to have grown from the original Bodhi Tree under which, sitting on the raised platform, Prince Siddharth mediated and finally attained Nirvana. Monasteries raised here by Burmese, Tibetan, Chinese, Japanese and Thai devotees, in their native architectural styles, are worth visiting. Then there is Chaukramana, the Jewel Walk, where it is believed that the Buddha strolled while in deep thought.",
+  "para": [
+    "The magnificent Maha Bodhi temple in Bodhgaya is an architectural amalgamation of many cultures. The temple bears the stamp of the architecture of the Gupta Dynasty and subsequent ages. On the walls of the temple, one sees Buddha carved in different aspects, and in the sanctum sanctorum, a colossal Buddha, is seen touching the ground, which has mythological significance in the Buddhist lores. The temple carries inscriptions recording the visits of pilgrims from Sri Lanka, China and Mayanmar. In the 7th and 10th Centuries AD Hieun Tsang, the Chinese traveler, also visited the temple in the 7th Century. Finally a visit to the Bodhgaya Archaeological Museum is a must for a religious art lover as it initiates one into the age of Buddha's centered art forms. The Buddhist sculpture collection from 1st Century BC to 11th Century AD is housed here at one place.Reflected through several art forms, it is more like a treasure house of artistic expression.",
+    "Bodhgaya is 245 kms. from Varanasi and 178 kms. from Patna via Rajgir and Nalanda. A place of religious sanctity for Hindus, Gaya lies 12 kms. from Bodhgaya between Pretshila and Ramshila hills and is washed by the shores of river Phalgu. Gaya has a large number of Buddhist temples also. While Buddha was doing severe penance, he became weak, tired and hungry. He rested under a tree, where he was offered food by a condemned village woman named Sujata. To everybody's surprise Buddha accepted her offerings. Legend has it that after having consumed the food, Buddha's countenance assumed a divine glow and he realized the Supreme Truth; that neither extreme self indulgence nor self mortification is ever required. What is needed is to follow the Middle Path (Department of tourism). Sujata Sthan or Durgeshwari Temple stands as a symbol commemorating this event."
+  ],
+  "country": "India",
+  "state": "Bihar",
+  "location": "243 Kilometers from the holy city of Varanasi.",
+  "climate": "Summer (March to June) - Warm; Monsoon (July to August)- Warm; Winter (November to February) - Cool and Pleasant.",
+  "bestTime": "October to April, Location: 243 KMS from Varanasi",
+  "significance": "One of the four holiest places for the Buddhists. Buddha got enlightenment at this place.",
+  "languages": "English, Hindi, Bhojpuri and Magahi",
+  "mostAuspiciousDay": "Buddha Jayanti",
+  "festivals": [
+    "Buddha Jayanti in Vaishakh Purnima in the month of May.",
+    "Sangha Dana on every Full Moon day.",
+    "Anagarika Dharmapala Birth anniversary on 17th September every year.",
+    "Boddhisatva Dr. Babasaheb Ambedkar Jayanti on 14th April.",
+    "The Revival day for Buddhism in Modern India on 14th October.",
+    "Peace prayer meetings every year in the month of October."
+  ],
+  "getThere": {
+    "air": "Gaya, 12 kilometers away from Bodh Gaya, is the main access station to reach Bodh Gaya. Gaya owns an international airport, which connects it directly to Colombo and Bangkok.",
+    "rail": "Gaya has an important railway station with services from many parts of India.",
+    "road": "Gaya and Bodh Gaya, both are well connected by roadways to other major cities such as Patna, the state capital of Bihar and Ranchi, the state capital of Jharkhand. Bodh Gaya is connected to Gaya by regular and frequent transport services and can easily be reached within half an hour or so, as it is just 12 kilometers away."
+  },
+  "majorBuddhistAttraction": [
+    {
+      "title": "The Bodhi Tree",
+      "desc": "The Bodhi tree is an auspicious ficus tree, the fifth generation plant of the original one, under which prince Siddhartha had attained enlightenment or the perfect knowledge. Under the tree is the Vajrasan, the platform on which Siddhartha had sat in meditation. Close to Vajrasan is Buddhapada, the footprints of the Buddha on stone and Chaukramana, the Jewel Walk, where it is believed that the Buddha strolled while in deep thought. Many sacred trees in India and other countries are originally raised from seeds brought from the ancient Bodh Gaya tree. Bhikkhuni Sanghamitra, daughter of the Indian emperor, Ashoka had taken a shoot of the original Bodhi tree to Sri Lanka in the 3rd century BCE, where it was planted by the Sri Lankan ruler, Devanampiya Tissa at the Mahavira monastery in Anuradhapura, and is still a sacred place for the Buddhists"
+    },
+    {
+      "title": "The Maha bodhi Temple",
+      "desc": "Bodh Gaya is the home to the ancient temple of Lord Buddha, located just east of the Bodhi tree. The temple's architecture is superb and has a beautiful stone railing around it. The Maha Bodhi temple has a 150 feet high tower, which contains a gilded colossal image of the Buddha in the 'bhumisparsha mudra' or touching the ground pose. The original shrine here is believed to have been raised by an Indian emperor Ashoka. Depicted on the walls of the temple are scenes from Buddha's life. The basement of the present temple is 15m square, 15m in length as well as in breadth and its height is 52m which rises in the form of a slender pyramid tapering off from a square platform. A museum in the vicinity has gold, bronze and stone images of the Buddha"
+    },
+    {
+      "title": "Lotus Tank",
+      "desc": "In the north of the Maha Bodhi temple lies a large tank full of lotus plant. The Buddha is believed to have spent a week at this site."
+    },
+    {
+      "title": "Shaivite Monastery",
+      "desc": "The Shaivite monastery is situated adjacent to the Maha Bodhi temple, and has a cluster of four temples. These temples are surrounded by enchanting greenery and marked by architectural marvels and have several 'samadhis' in their vicinity."
+    },
+    {
+      "title": "Other Monasteries",
+      "desc": "A number of Tibetan, Japanese and Burmese monasteries are located around the Maha Bodhi temple. The Tibetan monastery houses the massive Dharma Chakra or the Wheel of Law, while the Japanese monastery is famous for conducting vital discourse on Buddhism."
+    },
+    {
+      "title": "Bodh Gaya Museum",
+      "desc": "The Bodh Gaya museum fulfills the requirement of religious art lovers as it initiates one into the age of the Buddha's centered art forms. The museum houses artistic Buddhist sculpture collection from 1st century BCE to the 11th century CE."
+    }
+  ],
+  "otherAttraction": [
+    {
+      "title": "Jagannath Temple",
+      "desc": "The Jagannath temple is dedicated to the Hindu God Shiva, and has a statue of the deity, carved in glistening black stone."
+    },
+    {
+      "title": "Nearby Attractions",
+      "desc": "Gaya and Barabar cave are two of the major attractions near the holy place of Bodh Gaya. Gaya is a place of religious sanctity for the Hindus and lies 12 kilometers from Bodh Gaya between Pretshila and Ramshila hills. It has a large number of the Buddhist temples. The Barabar caves are 32 kilometers away from Bodh Gaya and presents a vivid picture of the Buddhist architecture."
+    },
+    {
+      "title": "Shopping",
+      "desc": "A tourist can buy Bells, Books on Buddhism, Thangkas and Woolen clothes(By the Tibetans) from the local market of Bodh Gaya, which is situated around the temple."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "Nalanda Tour",
+  "mainDesc": "A great seat of learning in ancient India, Nalanda in Bihar is strewn with enchanting red sandstone ruins. Established by the Gupta kings, Nalanda was an important university that attracted Buddhist students from all over the world. Scholars like Huen Tsang and Fahien were products of the Nalanda University.",
+  "para": [
+    "Ancient records indicate that Nalanda was frequented very often by Lord Mahavira and Lord Buddha during the 5th and 6th centuries quite regularly. Nalanda University ruins carpet around 14 acres of land in present-day Nalanda, a tiny village that still recounts its lost glory. Nalanda ruins represent interesting instances of Kushana architectural traditions.",
+    "The Nava Nalanda Mahavihar and the Nalanda Museum qualify as must-visits for those on Nalanda travel tours. Tour the Surya Temple at Baragaon located on the outskirts of Nalanda. Located at a distance of 72 kilometers from Patna, the capital of Bihar, Nalanda serves as the ideal base for those traveling to Rajgir, Bodh Gaya, and Bihar Sharief."
+  ],
+  "majorBuddhistAttraction": [
+    {
+      "title": "Nalanda University",
+      "desc": "The famous ancient learning centre, Nalanda is recorded as the world's earliest university set up in the 5th century BCE. It is believed that the Buddha had visited the place and gave sermons near the 'Mango grove of Pavarika'. The site includes 11 monasteries and several temples built in red bricks. The decline of Buddhism in India is associated with the destruction of Nalanda by the Islamic invasion in the 12th century CE."
+    },
+    {
+      "title": "Nava Nalanda Mahavira",
+      "desc": "A modern center for Theravadin Buddhist studies, known as the Nava Nalanda Mahavihar was set up in 1951. It continues to be a pioneer institution and is known for ambitious projects such as satellite imaging of the entire region."
+    },
+    {
+      "title": "Nalanda Museum",
+      "desc": "Established in 1971, the Nalanda Museum houses a good collection of ancient manuscripts, Buddhist statues, and unique artifacts from the ancient period."
+    }
+  ],
+  "otherAttraction": [
+    {
+      "title": "Surya (Sun) Temple",
+      "desc": "Nearby the ruins of Nalanda University lies the ancient Surya Temple, which is still in use and is a sacred pilgrimage site for Hindus."
+    },
+    {
+      "title": "Rajgir",
+      "desc": "Barely 15 kilometers away from Nalanda, Rajgir is also a sacred site for Buddhists. The Buddha is believed to have spent 12 years meditating and teaching here."
+    },
+    {
+      "title": "Pawapuri",
+      "desc": "A significant Jain pilgrimage site, Pawapuri is where Lord Mahavira attained Moksha. It is an important stop for those following the Jain faith."
+    }
+  ],
+  "getThere": {
+    "air": "The nearest airport is in Patna, 93 kilometers from Nalanda.",
+    "rail": "The nearest railway station is at Bakhtiyarpur, 38 kilometers from Nalanda. However, the loop lines connect both the places.",
+    "road": "Well-maintained highways connect Nalanda to Patna, Bodh Gaya, and other major tourist places."
+  }
+}

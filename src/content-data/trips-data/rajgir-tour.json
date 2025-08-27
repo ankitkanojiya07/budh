@@ -1,0 +1,93 @@
+{
+  "name": "Rajgir Tour",
+  "mainDesc": "Rajgir, which means 'the royal palace', is a place of great sanctity and significance for the Buddhists and Jains. Lord Buddha had delivered many of His sermons over here during His 12-years stay at Rajgir or Rajgriha. Situated 100 kilometers southeast of Patna, the state capital of Bihar, the city of Rajgir is also famous for health and winter resort with its warm water ponds.",
+  "state": "Bihar",
+  "location": "Southern Bihar. 74 kilometers from Bodhgaya and 100 kilometers from Patna.",
+  "climate": "Winter: Cold and Pleasant; Summer: Hot; Monsoon: Warm",
+  "significance": "Lord Buddha spent 12 years in Rajgir.",
+  "languages": "English, Hindi and Magahi (a regional language)",
+  "mostAuspiciousDay": "Buddha Jayanti",
+  "festivals": [
+    "Buddha Jayanti in the month of May.",
+    "Malamasa Mela",
+    "Makar Sankranti",
+    "Rajgir Dance Festival"
+  ],
+  "mustEat": "The famous 'Khaja' (a sweet) of Rajgir.",
+  "majorBuddhistAttraction": [
+    {
+      "title": "Griddhakuta or Vulture's Peak",
+      "desc": "The peak is a sacred site for the Buddhists as at this place, the Lord Buddha set in motion His second wheel of law and preached sermons to his disciples for three months in the rainy season. The peak also owns a massive modern Stupa, the Shanti Stupa, built by the Buddhist Sangha of Japan."
+    },
+    {
+      "title": "Venuvana",
+      "desc": "Venuvana Vihar is a historical and sacred monastery that was built by King Bimbisara for the Lord Buddha to reside."
+    },
+    {
+      "title": "Sattapani Caves",
+      "desc": "A sacred site where the first Buddhist council was convened in 483 BCE soon after the Buddha's death."
+    },
+    {
+      "title": "Jivika Mango Garden",
+      "desc": "This is the site of the royal dispensary, where Lord Buddha was brought to have a dressing of His wounds by the royal physician, Jivaka during the reign of Bimbisara."
+    },
+    {
+      "title": "Karnada Tank",
+      "desc": "Karnada tank is a sacred Buddhist site as it was here Lord Buddha used to have a bath."
+    },
+    {
+      "title": "Buddha's sculpture",
+      "desc": "The sculpture which depicts the 'Mahaparinirvana' or the 'great cessation' of the Buddha shows the Buddha lying on His right side with the right forearm resting under His head to commemorate the final salvation or 'Mukti'."
+    }
+  ],
+  "otherAttraction": [
+    {
+      "title": "Hot Springs",
+      "desc": "Situated at the foot of the Vaibhava hill, the hot springs are filled with water coming from the seven streams or Saptadhara and believed to have medicinal value."
+    },
+    {
+      "title": "Bimbisara Jail",
+      "desc": "Bimbisara jail is the spot, which was chosen by Mauryan Buddhist king Bimbisara to spend his last days, where he could see the Buddha climbing up the Grihakuta hill to meditate."
+    },
+    {
+      "title": "Pippala Cave",
+      "desc": "The Pippala cave is a natural rectangular stone cave on Vaibhava hill above the Hot springs, also known as 'Jarasandha Ki Baithak'."
+    },
+    {
+      "title": "Jain Temples",
+      "desc": "Rajgir houses 26 Jain temples on the hill, some of which date back to the 5th century BCE, showing the parallel patronage given to Jainism by King Bimbisara."
+    },
+    {
+      "title": "Maraka Kushi",
+      "desc": "Maraka Kushi is the site where the unborn foetus of Ajatashatru was cursed as a patricide."
+    },
+    {
+      "title": "Ajatashatru's Fort",
+      "desc": "This fort was built by Mauryan ruler Ajatashatru in the 6th century BCE and is an important tourist attraction."
+    },
+    {
+      "title": "The Swarna Bhandar",
+      "desc": "The Swarna Bhandar or King Bimbisara's treasury includes two cave chambers carved from a single rock, believed to hold hidden treasure guarded by undeciphered Sankhalipi inscriptions."
+    },
+    {
+      "title": "Lakshmi Narayan Mandir",
+      "desc": "A pink-hued Hindu temple dedicated to Vishnu and Lakshmi, located beside the hot springs."
+    }
+  ],
+  "nearbyBuddhistAttraction": [
+    {
+      "title": "Bodhgaya",
+      "desc": "Located 46 km from Rajgir, Bodh Gaya is the site where Siddhartha Gautama attained enlightenment under the Bodhi tree and became Lord Buddha."
+    },
+    {
+      "title": "Nalanda",
+      "desc": "Only 15 km from Rajgir, Nalanda was home to the world-renowned ancient learning center and Buddhist monastery, Nalanda University."
+    }
+  ],
+  "shopping": "Some of the best buys in Rajgir are the local handicraft items, Religious Buddhist items, such as bells, statues, incense sticks and beads.",
+  "getThere": {
+    "air": "The nearest airport is at Patna, the state capital of Bihar, 100 kilometers from Rajgir. Connected by both International and Domestic flights.",
+    "rail": "Nearest railhead is at Bakhtiyarpur on the Delhi-Howrah main line, 54 kilometers from Rajgir. A loop line connects Bakhtiyarpur to Nalanda, which is 15 kilometers from Rajgir.",
+    "road": "Rajgir is connected by road to Patna (100 km), Bodh Gaya (46 km), and other towns via bus, coach, taxi, or private car."
+  }
+}

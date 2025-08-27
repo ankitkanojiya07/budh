@@ -1,0 +1,60 @@
+{
+  "name": "Vaishali",
+  "mainDesc": "Small village surrounded by banana and mango groves as well as rice fields. But excavations in the area have brought to light an impressive historical past. The epic Ramayana tells the story of the heroic King Vishal who ruled here. Historians maintain that one of the world's first democratic republics with an elected assembly of representatives flourished here in the 6th century B.C. in the time of the Vajjis and the Lichchavis. And while Pataliputra, capital of the Mauryas and the Guptas, held political sway over the Gangetic plain, Vaishali was the center for trade and industry.",
+  "para": ["Lord Buddha visited Vaishali frequently and at Kolhua, close by, preached his last sermon. To commemorate the event, Emperor Ashoka, in the third century B.C. erected one of his famous lion pillars here. A hundred years after the Mahaparinirvana of the Buddha - Vaishali hosted the second great Buddhist council. Two stupas were erected to commemorate this event. Jainism, too, has its origins in Vaishali, for in 527 B.C., Lord Mahavir was born on the outskirts of the city, and lived in Vaishali till he was 22. Vaishali is then twice blessed and remains an important pilgrim center for both Buddhists and Jains, attracting also historians foraging for the past.",
+
+    "On the outskirts of Vaishali stood the grand double storied Buddhist monastery. Buddha often discoursed here. He extended spiritual enfranchisement to women by admitting them to the Holy Order which was founded here. Legend has it that on one of his visits, several monkeys dug up a tank for his comfortable stay and offered him a bowl of honey. This is regarded as one of the great incidents in the legends of Buddha, who announced his approaching Nirvana and preached his last sermon here.",
+
+    "The Lichchhavis came a long way to bid him farewell on his way to Kushinagara and finally, they were stopped by a river created by Buddha. He once again paused to have a last of his much loved city. As a piety for Vaishali, he had already given his alms bowl which remained here for long time.",
+    "A life size-pillar beside a brick stupa at Kolhua commemorates Buddha's last sermon and announcement of his approaching nirvana. The lion faces north, the direction Buddha took on his last voyage. Adjacent to this is the tank associated with the monkeys offering honey. Nearby are the skeletal remains of a monastery where Buddha resided and a votive stupas dot the region",
+
+    "Vaishali museum houses some of the archaeological remains discovered here. Facing the museum is the Abhishek Pushkarni which was holy to Lichchhavis. On one side of the lake is newly built Vishwa Shanti Stupa, a sixth in the series to be erected in India. Close to the museum is the shaded stupa which is supposed to have housed the casket relic with the ashes of Buddha.",
+
+    "Archaeologists have uncovered a good deal of Vaishali. It begins with a huge mound which is associated with the ancient Parliament referred to Raja Vaihala Ka Garh. Bawan Pokhar temple houses a rich collection of black basalt images dating back to the Gupta and Pala period. Another black basalt, four headed Shivling (Choumukhi Mahadeva) was discovered when a reservoir was being dug. Behind the bawan pokhar temple is a Jain temple famous for its image of the Trithankar. A little distance from these temples lies the Lotus Tank which used to be a picnic spot of the Lichchhavis.",
+
+    "Further north at Lauria Areraj, 31 Kms from Motihari, lies one of the Ashokan Columns with six of his edicts. The column is devoid of its capital. Another Ashokan column along with the lion capital can be visited at Nandangarh, 23 kms from Bettiah. These pillars possibly mark the course of the ancient Royal highway from Patliputra to Nepal valley. Few kilometers from the monolith at Nandangarh is the mighty brick stupa which is believed to have stored the casket relic containing the ashes of Buddha. At Nandangarh one can also see a dozen vedic mounds that contain the remains of ruling clans of pre-Buddhists times."],
+  "majorBuddhistAttraction": [
+    {
+      "title": "Vishwa Shanti Stupa",
+      "desc": "Also known as the Pillar of Peace, the Vishwa Shanti Stupa is the tallest in the world. It was built jointly by the Indian and Japanese governments."
+    },
+    {
+      "title": "Buddha's Stupas",
+      "desc": "Buddha Stupa I and II date back to the 4th century BCE. Built of bricks, they contain caskets with the ashes of Lord Buddha."
+    }
+  ],
+  "otherAttraction": [
+    {
+      "title": "Ashokan Pillar",
+      "desc": "The famous lion pillar, built by the Indian emperor Ashoka is also known as the Ashokan Pillar. The pillar symbolises the golden Indian architecture and is made of a single piece of red sandstone, capped by a high bell shaped capital. A life-size figure of a lion adorns the very top of this amazing pillar."
+    },
+    {
+      "title": "Coronation Tank",
+      "desc": "The coronation tank was used by the Lichhavi kings to anoint before being crowned."
+    },
+
+    {
+      "title": "Bawan Pokhar Temple",
+      "desc": "Bawan Pokhar temple is a sacred place for the Hindus. Built during the Pala dynasty, the old temple is situated on the banks of the Bawan lake and contains beautiful images of Hindu Gods and Goddesses."
+    },
+    {
+      "title": "Chaumukhi Mahadeva",
+      "desc": "It is a holy place for the Hindus and has a sacred Shiva lingam carved with four faces."
+    },
+    {
+      "title": "Vaishali Museum",
+      "desc": "The museum has a small collection of regional handicrafts and artifacts related to the life of Lord Buddha and Lord Mahavira."
+    }
+  ],
+  "nearbyBuddhistAttraction": [
+    {
+      "title": "Patna",
+      "desc": "Located 55 km away, Patna (ancient Pataliputra) was once the capital of the Mauryas and Guptas and is a gateway to Buddhist sites like Vaishali."
+    }
+  ],
+  "getThere": {
+    "air": "Nearest airport is Loknayak Jai Prakash International Airport in Patna, 55 kilometers from Vaishali. Well-connected by domestic and international flights.",
+    "rail": "Nearest railhead is Hajipur, 35 kilometers from Vaishali. One can hire a taxi, bus or auto rickshaw from there.",
+    "road": "Regular buses and taxis are available from Patna and other major towns in Bihar and Jharkhand. Vaishali is 55 kilometers by road from Patna."
+  }
+}

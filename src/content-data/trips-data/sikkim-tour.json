@@ -1,0 +1,14 @@
+{
+  "name": "Sikkim",
+  "mainDesc": "Sikkim is situated in the Eastern Himalayas, along the borders of Bhutan (East), Tibet (North), Nepal (West) and West Bengal (South).",
+  "para": [
+    "Its capital, Gangtok has a lot to see, specially the Research Institute of Tibetology, a World centre for the study of Buddhist philosophy & religion and has a rare collection of Thankas, statues and over 200 Buddhist icons, 24kms away, you approach the Rumtek Monastery which houses among the most unique art objects in the world.",
+    "3 kms from Gangtok is the Enchey Monastery built almost 200 years ago and was blessed by the great tantric master Lama Druptab Karpa."
+  ],
+  "getThere": {
+    "air": "The closest Indian Airport is at Bagdogra, 124 km from Gangtok, where scheduled flights operates to and fro from Kolkata, Delhi, Guwahati. From Katmandu, fly to Bhadrapur in the east Nepal (1 hour), then drive to Kakarbhitta (Nepal-India border, 35 km), to Siliguri (37 km) and to Gangtok (110 km, 4 hrs). Or fly to Biratnagar also in East Nepal.",
+    "helicopter": "The Bagdogra airport is connected to Gangtok by a helicopter service which takes approx. 30 minutes to reach Gangtok.",
+    "rail": "The closest Railhead is at New Jalpaiguri which is around 148 km away from Gangtok. It is connected to Kolkata (Calcutta), New Delhi, Guwahati and other major Indian cities.",
+    "road": "Gangtok is at a distance of 110 km from Siliguri and will take 4 hours from Siliguri to reach Gangtok. Gangtok is connected by road with Darjeeling (4 hrs), and with Bhutan, Phuntsholing (6 hrs)."
+  }
+}

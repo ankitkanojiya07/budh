@@ -1,0 +1,63 @@
+{
+  "name": "India Buddhist Tour",
+  "link": "/india-buddhist-tour",
+  "duration": "10 Nights / 11 Days",
+  "destination": "Delhi - Patna - Rajgir - Bodhgaya - Varanasi - Sarnath - Kushinagar - Lumbini - Sravasti - Balrampur - Lucknow - Delhi",
+  "sketchProgram": [
+    {
+      "day": "Day 01",
+      "title": "Delhi",
+      "desc": "Welcome on arrival at Delhi and transfer to hotel."
+    },
+    {
+      "day": "Day 02",
+      "title": "Delhi",
+      "desc": "After breakfast, tour the historic city of old Delhi to include the magnificent Red Fort, Jama Masjid, largest mosque in Asia, both built by Shahjahan, Rajghat-memorial to Mahatma Gandhi, the \"Father of the Nation\". Afternoon, tour of New Delhi to include Humanyun Tomb, Qutab Minar, India Gate, Birla Mandir, Bahai Temple. Overnight at hotel."
+    },
+    {
+      "day": "Day 03",
+      "title": "Delhi / Patna",
+      "desc": "Depart for airport for early morning flight to 2500 year old ancient city of Patna. On arrival at Patna transfer to hotel. Afternoon excursion to Vaishali where Lord Buddha preached his last sermon announcing his approaching Nirvana. Visit stupas holding urns containing ashes of Buddha and Ashoka pillar erected by Emperor Ashoka to mark places sanctified by Buddha. The place is also known now for famous Madhubani paintings. Overnight at hotel."
+    },
+    {
+      "day": "Day 04",
+      "title": "Patna / Rajgir",
+      "desc": "Morning drive down to Rajgir (102 kms / 2 hrs & 30 mins) capital of 6th century Magadha empire. It was revered site of Buddha's discourses. Buddha spent many years here. Visit Gridhrakula, Sapataparni cave, Ajatsatru fort and Venuvana. Afternoon visit Nalanda - the world's oldest university founded in the 5th century. Also visit monasteries and temples with impressive Buddhist & Hindu images. The Institute for research into Buddhism and Pali literature which houses rare manuscripts, is also worth visiting for the enthusiasts. Archaeological museum is also not to be missed for the rare collections. Overnight at hotel."
+    },
+    {
+      "day": "Day 05",
+      "title": "Rajgir / Bodhgaya",
+      "desc": "Early morning after breakfast depart for Bodhgaya (193 kms / 4 hrs & 30 mins) by road. Enroute visit Baraliar caves - the earliest examples of rock cut caves. Most impressive craftsmanship of carving and rock inscription ca be seen. These caves served as inspiration for the setting of E.M Foresters \"A Passage to India\". Arrive Bodhgaya and overnight in the hotel."
+    },
+    {
+      "day": "Day 06",
+      "title": "Bodhgaya",
+      "desc": "Bodhgaya is one of the holiest Buddhist pilgrimage centres. It was here that Gautama attained enlightenment and became Buddha under the \"Bodhi\" tree Satabodhi temple, Japanese and Tibetan monasteries along with Magadha university museum are also to be visited. Overnight at hotel."
+    },
+    {
+      "day": "Day 07",
+      "title": "Bodhgaya / Varanasi",
+      "desc": "Early morning after breakfast depart for Varanasi (243 kms / 6 hrs) by road (if one so desires one can go by train to Varanasi for Gaya). Arrive by afternoon and transfer to hotel. Afternoon visit ghats and temples and Benaras Hindu University. Overnight at hotel."
+    },
+    {
+      "day": "Day 08",
+      "title": "Varanasi / Sarnath",
+      "desc": "Early morning boat ride on river Ganges to see the beautiful sunrise at Ganges. After breakfast excursion to Sarnath, the principle centre of Buddhism. It was here around 530 B.C that Buddha preached his 1st sermon after gaining enlightenment. Also visit Dhamekh and Dharmarajika stupas."
+    },
+    {
+      "day": "Day 09",
+      "title": "Varanasi / Kushinagar",
+      "desc": "Afternoon drive to Kushinagar - the place where Buddha passed into Parinirvana. Visit Ramabha stupa which stands on the spot where the body of the Lord was cremated. Also visit Natha Kumarka Kot enshrining the large recumbent figure of Buddha in the state of Nirvana. Overnight at hotel."
+    },
+    {
+      "day": "Day 10",
+      "title": "Kushinagar / Lumbini / Sravasti",
+      "desc": "Morning excursion to Lumbini, the place where Buddha was born. An ancient shrine with an image representing the nativity of Buddha is still preserved. Afternoon drive to Balrampur and visit Sravasti and other Buddhist shrines enroute. Overnight at hotel."
+    },
+    {
+      "day": "Day 11",
+      "title": "Balrampur / Lucknow / Delhi",
+      "desc": "Drive to Lucknow to catch flight to Delhi. On arrival, transfer to international airport for flight to onward destination."
+    }
+  ]
+}

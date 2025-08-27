@@ -1,0 +1,53 @@
+{
+  "name": "Ganga Sailing Tour",
+  "duration": "8 nights / 9 days",
+  "link": "/ganga-sailing-tour",
+  "destination": "Delhi - Allahabad - Lakhiya - Usmanpur - Murdaghat - Mirzapur - Varanasi - Delhi",
+  "sketchProgram": [
+    {
+      "day": "Day 01",
+      "title": "Arrive - Delhi",
+      "desc": "Arrive Delhi. Met upon arrival and transfer to hotel for overnight stay."
+    },
+    {
+      "day": "Day 02",
+      "title": "Delhi - Allahabad",
+      "desc": "Day at leisure in Delhi. Optional sightseeing tour of Delhi. In the evening board overnight train to Allahabad."
+    },
+    {
+      "day": "Day 03",
+      "title": "Allahabad - Lakhiya",
+      "desc": "Arrive Allahabad and transfer to the hotel for wash / change and breakfast. Later proceed to Kilaghat - the starting point of sailing. Kilaghat has a fort built by the Moghul Emperor Akbar. A little away from the ghat at \"Sangam\" three rivers Ganga, Yamuna and Saraswati join together and flow as one. At this meeting place people take dip here to wash away their sins. Set sail eastward to Varanasi. Reach Lakhiya in the evening. Camp on the bank / island in the river for overnight stay."
+    },
+    {
+      "day": "Day 04",
+      "title": "Lakhiya - Usmanpur",
+      "desc": "After breakfast set sail to reach Usmanpur by covering approx 35 kms in 08 Hrs by river. Due to the turns and the curves the distance is more by river than by road. This adds thrill to the sailing. Reach Usmanpur in the evening. Camp on the river bank / island for overnight stay."
+    },
+    {
+      "day": "Day 05",
+      "title": "Usmanpur - Murdaghat",
+      "desc": "After breakfast, sail approximately 45 km in 9 hours to reach Murdaghat. Camp by the riverbank for dinner and overnight stay."
+    },
+    {
+      "day": "Day 06",
+      "title": "Murdaghat - Mirzapur",
+      "desc": "Start sailing towards Mirzapur in the morning. After about 4 hrs, stop at Vindhyachal. Visit the temple dedicated to Goddess Kali. After the visit have your lunch on an Island nearby and sail further to reach camping spot in approx. 4 hrs time for dinner and overnight stay."
+    },
+    {
+      "day": "Day 07",
+      "title": "Mirzapur - Varanasi",
+      "desc": "Proceed for last leg of sailing to Varanasi. Enroute visit Chunar Fort of Medieval India and Ramnagar Fort which is a 17th century fort with interesting museum. finish sailing at first Ghat of Varanasi 'Lanka Ghat'. From Lanka Ghat drive to hotel in Varanasi."
+    },
+    {
+      "day": "Day 08",
+      "title": "Varanasi",
+      "desc": "After an early morning a boat cruise on river Ganga walk through the narrow lanes of Varanasi visiting Kashi Vishwanatha or Golden temple. Afternoon visit Sarnath, where Lord Buddha gave his first sermon."
+    },
+    {
+      "day": "Day 09",
+      "title": "Varanasi - Delhi - Depart",
+      "desc": "Morning free for individual activities. Transfer to airport to board flight for Delhi. Met upon arrival and transfer to international airport in time to board flight for onward destination."
+    }
+  ]
+}

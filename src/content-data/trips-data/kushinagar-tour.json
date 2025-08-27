@@ -1,0 +1,10 @@
+{
+  "name": "Kushinagar Tour",
+  "mainDesc": "Kushinagar is where the Buddha finally attained Mahaparmirvana. Amongst the ruins are the Mukutbandhan Stupa and a beautiful statue of the reclining Buddha. At Gorakhpur, en-route to Kushinagar, there is the Rahul Sankritayan Museum with a collection of thangka paintings.",
+  "para": ["An inscribed relic casket was dug out of the ruins of a stupa at Piprahwa, now identified as Kapilavastu.ermon.", "Kushinagar, one of the principal centre of Buddhist pilgrimage, is the place where Lord Buddha left his corporeal self and attained Mahaparinirvana.\nThe credit for bringing this ancient site to light goes to General A. Cunningham and A.C.I. Carlyl, who, after excavating the site in 1861, established its antiquity for the first time. Later, between 1904 and 1912, several excavations conducted by the Archaeological Survey of India at Kushinagar confirmed its identity.\nThe monuments of Kushinagar are situated in three distinct groups comprising the main site of the Nirvana Temple, the central stupa and surrounding monasteries, the Mathakuar shrine to the southwest, and the Ramabhar Stupa a kilometer to the east."],
+  "getThere": {
+    "air" : "Varanasi is nearest airport which is 280 kms. away.",
+    "rail" : "Nearest railway station is Gorakhpur : 51 km, which is the headquarters of North Eastern Railways and linked to important destinations. Some important trains to Gorakhpur are Bombay-Gorakhpur-Bandra Exp., New Delhi-Barauni-Vaishali Exp. Cochin-Gorakhpur Exp., Shaheed Exp, Amarnath Exp, Kathgodam Exp, (Kushinagar does not has a Railway Station, one has to go to Gorakhpur from where Kushinagar can be reached by road.",
+    "road" : "Situated on National Highway No. 28, with frequent bus services, Kushinagar is well connected with other parts of the state. Some major road distances are : Gorakhpur-51 km, Lumbini-173 km, Kapilastu-148 km, Sravasti-254 km, Sarnath 266 km."
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "name": "Sarnath Tour",
+    "destination": "Varanasi - Gaya - Allahabad - Chitrakoot - Ayodhya",
+    "duration": "12 Days",
+    "bestTime": "September to April",
+    "mainDesc": "Sarnath, where the Buddha preached his first sermon in the Deer Park, contains the most impressive remains, as well as a modem temple. The Dharmarajika, Chaukhandi and Dharnek stupas are outstanding. There are also the remains of a monastery, and the beautifully polished Lion Capital of Ashoka. Sarnath contains a rich library and at the Mula gandha Kutir Vihara there are excellent frescoes by Kosetsu Nosu. The Sarnath Museum, not far from the site, contains some of the finest specimens of Buddhist sculpture. At all centers of Buddhist worship, the Vaisakha (April-May) full moon is observed as the anniversary of three important events - the Buddha's birth, Enlightenment and death, while the Asadh (July - August) full moon is observed as the anniversary of his first sermon.",
+    "getThere": {
+        "air": "There is a direct daily connection between Varanasi and Delhi, and also to Agra, Khajuraho, Calcutta, Mumbai, and Lucknow.",
+        "rail": "Varanasi is an important and major rail junction. The city is served by trains from all metros and major cities across the country.",
+        "road": "Sarnath is just 10 km from Varanasi."
+    }
+}

@@ -1,0 +1,73 @@
+{
+  "name": "Buddhist Tour Package",
+  "duration": "12 nights / 13 days",
+  "link": "/buddhist-tour-package",
+  "destination": "Kathmandu - Lumbini - Kushinagar - Patna - Bodhgaya - Sarnath - Varanasi - Agra - Delhi",
+  "sketchProgram": [
+    {
+      "day": "Day 01",
+      "title": "ARRIVE KATHMANDU",
+      "desc": "On arrival meet and assist at the airport and transfer to pre-booked hotel."
+    },
+    {
+      "day": "Day 02",
+      "title": "KATHMANDU",
+      "desc": "After breakfast visit Kathmandu city, Swayambhunath & museum. Afternoon, excursion to Patan & Tibetan handicraft center."
+    },
+    {
+      "day": "Day 03",
+      "title": "KATHMANDU",
+      "desc": "After breakfast visit Boudhnath, Pashupatinath & Bhaktapur. Afternoon, excursion to Dhulikhel."
+    },
+    {
+      "day": "Day 04",
+      "title": "KATHMANDU-BHAIRAWA (FLIGHT), BHAIRAWA-LUMBINI",
+      "desc": "After breakfast, transfer to airport to board flight for Bhairawa. Arrive Bhairawa and transfer to Lumbini. In the afternoon, visit Lumbini"
+    },
+    {
+      "day": "Day 05",
+      "title": "LUMBINI-KUSHINAGAR",
+      "desc": "After breakfast leave for Kushinagar. Arrive Kushinagar and transfer to hotel. Afternoon, visit Kushinagar"
+    },
+    {
+      "day": "Day 06",
+      "title": "KUSHINAGAR-PATNA",
+      "desc": "After breakfast, leave for Patna. Enroute visit Vaishali. Arrive Patna and check in at pre-booked hotel."
+    },
+    {
+      "day": "Day 07",
+      "title": "PATNA-BODHGAYA",
+      "desc": "After breakfast, leave for Bodhgaya. Enroute visit Rajgir & Nalanda. Continue drive to Bodhgaya. Arrive Bodhgaya and check in at pre-booked hotel."
+    },
+    {
+      "day": "Day 08",
+      "title": "BODHGAYA",
+      "desc": "After breakfast, visit Bodhgaya. Afternoon, free for individual activities"
+    },
+    {
+      "day": "Day 09",
+      "title": "BODHGAYA-VARANASI",
+      "desc": "After breakfast, leave for Varanasi. Arrive Varanasi and check in at pre-booked hotel. Afternoon, excursion to Sarnath - the place where Lord Buddha gave his first sermon."
+    },
+    {
+      "day": "Day 10",
+      "title": "VARANASI-AGRA (OVERNIGHT TRAIN)",
+      "desc": "Early morning, leave for boat ride on the Ganges. Return to hotel for breakfast. After breakfast, city tour of Varanasi. In the evening transfer to the railway station to board train for Agra. Overnight in the train."
+    },
+    {
+      "day": "Day 11",
+      "title": "ARRIVE AGRA",
+      "desc": "Arrive Agra in the morning and transfer to pre-booked hotel. Afternoon, visit the Taj Mahal, Red Fort & Itmad-ud-daulah."
+    },
+    {
+      "day": "Day 12",
+      "title": "AGRA-DELHI",
+      "desc": "After breakfast, leave for Delhi. Arrive Delhi & check in at pre-booked hotel. Rest of the day free for individual activities."
+    },
+    {
+      "day": "Day 13",
+      "title": "DEPART DELHI",
+      "desc": "After breakfast, full day city tour of Old & New Delhi. Evening, transfer to the airport to board flight back home"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Ellora Caves Tour",
+  "location": "Near Aurangabad district, Maharashtra",
+  "highlights": "UNESCO World Heritage Site",
+  "represent": "Buddhism, Hinduism and Jainism",
+  "foundedIn": "Between 5th century AD and 11th century AD",
+  "para": [
+    "Ellora Caves are situated in the state of Maharashtra, India. They lie at a distance of approximately 25 km from the Aurangabad district. The beautiful caves of Ellora symbolize three of the major religions of the world, namely Buddhism, Hinduism and Jainism. They also hold the distinction of being declared a World Heritage Site by UNESCO. Ellora Caves, cut out of the vertical face of a cliff, comprise of splendid chaityas (halls of worship), viharas (monasteries) and Hindu and Jain temples.",
+
+    "There are a total of 34 monasteries and temples inside these caves. All of them date back to somewhere between 5th century AD and 11th century AD and have been built in a linear pattern. All the caves have different religious inclinations. Twelve of the caves (cave number 1 to 12) belong to the Mahayana sect of Buddhism and were built between 550 AD and 750 AD. Seventeen caves (cave number 13 to 29) comprise of Hindu temples and were constructed between 600 AD and 875 AD.",
+
+    "Five caves (cave number 30 to 34) belong to the Jains and were built between 800 AD and 1000 AD. Some time back, archaeologists unearthed 22 more caves at Ellora, devoted to Lord Shiva, a Hindu God. All the caves are adorned with magnificent paintings and sculptures. The Buddhist caves have beautiful carvings that illustrate the life of Lord Buddha. Some of the caves have exquisite carvings and sculptures and have been based on the classical Indian art. Then, you have the Kailash Temple in cave number 16, deemed to be the largest monolith structure in the entire world.",
+
+    "Tourists come from far and wide to visit this amazing cave temple. Out of the numerous Buddhist Caves at Ellora, cave number 10, cave number 11 and cave number 12 are considered to be the most significant ones. Cave number 10 is a splendid example of Chaitya architecture in India. It is named after Vishwakarma, the presiding deity of all architects. Cave number 11 is known as Do Tal. It is a three-story structure dating back to the 8th century AD. Cave number 12, known by the name of Teen Tal, is also a wonderful three-story cave."
+  ],
+  "getThere": {
+    "air": "The nearest airport of Aurangabad is approximately 30 km away.",
+    "rail": "Apart from Aurangabad railway station, one can also go to the Jalgaon railway station",
+    "road": "Ellora Caves are well linked to Aurangabad by road. Buses as well taxis are easily available"
+  }
+
+}

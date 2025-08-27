@@ -1,0 +1,48 @@
+{
+  "name": "Way to Enlightenment Tour",
+  "duration": "7 nights / 8 Days",
+  "link": "/way-to-enlightenment-tour",
+  "destination": "Bodhgaya - Patna - Kushinagar - Lumbini - Sravasti - Varanasi",
+  "sketchProgram": [
+    {
+      "day": "Day 1",
+      "title": "Bodhgaya",
+      "desc": "Arrive Bodhgaya & transfer to Hotel. Overnight at Hotel in Bodhgaya."
+    },
+    {
+      "day": "Day 2",
+      "title": "Bodhgaya / Patna (190 kms)",
+      "desc": "Breakfast at hotel. Proceed to Rajgir and Nalanda (80 kms, 4hrs drive). After sightseeing of Rajgir and Nalanda proceed to Patna (90 kms, 3½ hr drive). On Arrival at Patna transfer to Hotel. Overnight at Hotel in Patna."
+    },
+    {
+      "day": "Day 3",
+      "title": "Patna / Kushinagar (via Vaishali, approx. 350 kms, 8 hrs drive)",
+      "desc": "After breakfast proceed to Kushinagar enroute visit Vaishali. On arrival transfer to Hotel. Overnight at Hotel in Kushinagar.\nKushinagar - The place where Buddha entered perfect tranquillity the state of MahaPariNirvana."
+    },
+    {
+      "day": "Day 4",
+      "title": "Kushinagar / Lumbini (in Nepal, approx. 170 kms, 4 hrs. drive)",
+      "desc": "After breakfast proceed to Lumbini (situated in Nepal, 25 kms from India Border). After clearing Immigration & Custom Formalities visit Lubini for sightseeing, transfer to Hotel. Overnight at Hotel in Lumbini.\nLumbini - Birth place of Lord Buddha"
+    },
+    {
+      "day": "Day 5",
+      "title": "Lumbini / Sravasti (in India) (Approx. 240 kms, 6 hrs. drive)",
+      "desc": "After breakfast proceed to Sravasti. Entering in India again. On arrival sightseeing of Sravasti and transfer to Hotel. Overnight at Hotel in Sravasti.\nSravasti - The place of Miracles"
+    },
+    {
+      "day": "Day 6",
+      "title": "Sravasti / Varanasi (Approx. 350 kms, 7-8 hrs. drive)",
+      "desc": "After breakfast proceed to Varanasi (Sarnath). On arrival transfer to Hotel. Overnight at Hotel in Varanasi.\nSarnath - The place of first sermon."
+    },
+    {
+      "day": "Day 7",
+      "title": "Varanasi / Bodhgaya (Approx. 300 kms, 7 hrs. drive)",
+      "desc": "Morning Boat ride on river Ganges. After Breakfast excursion to Sarnath (12 kms from Varanasi), afternoon proceed to Bodhgaya. On arrival transfer to Hotel. Overnight at Hotel in Bodhgaya.\nBodhgaya - The place of enlightenment."
+    },
+    {
+      "day": "Day 8",
+      "title": "Bodhgaya out",
+      "desc": "Morning sightseeing of Bodhgaya, visiting Maha Bodhi Temple & Monasteries. Afternoon transfer to Airport for onward destinations."
+    }
+  ]
+}

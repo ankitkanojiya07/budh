@@ -1,0 +1,16 @@
+{
+  "name": "Kapilvastu Tour",
+  "destination": "Varanasi - Gaya - Allahabad - Chitrakoot - Ayodhya",
+  "duration": "10 Days",
+  "bestTime": "September to April",
+  "mainDesc": "The capital city of the Sakya clan, and one of the earliest republics, it was in Kapilavastu's opulent environs, that the holy soul of prince Siddharth (Gautam Buddha) spent his childhood. Here he saw sorrow and pain, disease and death. Then, finally when he saw a radiant happy Sadhu who had conquered all these, he decided to renounce all worldly riches and pleasures to seek truth and embark on the path of salvation.",
+  "para": [
+    "Excavations were conducted by the Archaeological Survey of India between 1971 and 1977. In a stupa that was excavated, referred to as the Eastern Stupa, by archaeologists, an inscription was found dating back to the Kushan period. Its text read Om devaputra vihare Kapilavastu bhikku sanghasa (This is the Devaputra Vihara of the Kapilavastu bhikshu sangha).",
+    "One and a half kilometres from the site there are two excavated mounds. The larger one is a thick walled structure, which according to local belief, was Suddhodana's palace. There is a small Sri Lankan monastery and temple, Mahinda Mahavihara, in the vicinity of the ruins"
+  ],
+  "getThere": {
+    "air": "Varanasi 312 kms away is the nearest airport.",
+    "rail": "Sidharthnagar Railway station is 20 kms away.",
+    "road": "It is linked by good all weather roads to Gorakhpur and other towns of UP."
+  }
+}

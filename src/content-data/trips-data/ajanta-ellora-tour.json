@@ -1,0 +1,13 @@
+{
+        "name": "Ajanta Ellora Tour",
+        "destination": "Delhi - Aurangabad - Delhi",
+        "duration": "4 Days",
+        "bestTime": "September to April",
+        "mainDesc": "Ajanta & Ellora are world famous for the rock cut temples. The 30 rock caves of Ajanta are in the shape of a mammoth horse-shoe, nestling in an inner fold of the Sahyadri Hills. In Ellora, there are 34 cave temples, 12 Mahayana Buddhist caves, 17 Hindu caves and 5 caves of the Jain faith. 22 more caves dedicated to Shiva were recently discovered. Ajanta & Ellora is a protected monument site under the Archaeological Survey of India and has been included in the World Heritage list of monuments. The tourist season extends right round the year but the best time to visit is October to March. These are cooler months and the maximum temperature is 34 degree Celsius while the minimum is 12 degree Celsius. ",
+        "getThere": {
+            "air": "Aurangabad is the nearest airport which is 108 km away.",
+            "rail": "Jalgaon, 58 km away, on Central Railway is a convenient railhead.",
+            "road": "ajanta is 99 km from Aurangabad, 487 km from Mumbai (via Jalgaon), 487 km (via Manmad) and 499 km via Pune. While Ellora is about 30 km from Aurangabad"
+        }
+}
+    

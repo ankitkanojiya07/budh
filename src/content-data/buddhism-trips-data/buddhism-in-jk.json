@@ -1,0 +1,81 @@
+{
+  "name": "Buddhism in Jammu & Kashmir",
+  "significance": ["The northern most state of India, or rather the crown of the country - that is Jammu and Kashmir occupying and area of 222,236 sq km. To its south, the state has a beautiful neighbour in form of Himachal Pradesh. To its north and east is the People's Republic of China while to its west is country of Pakistan",
+  "The state is segregated into three regions owing to the difference in topography and culture",
+  "While Jammu has plenty of temples and forests retreats, Kashmir is a jewel shinning under clear blue sky and infront of snow covered mountains. Ladakh, on the other hand is a cold desert with a lifestyle that resembles more to Tibet than to India.",
+  "Though, continuous terrorists attacks on the state has mitigated much of the erstwhile charm, yet offlate, things have been changing for good. A whole lot of people are yet again taking up tourism to this beautiful land."
+  ],
+  "getThere": {
+    "air": " The city of Jammu has its own airport, well connected with most of the important cities. Almost all the major airlines like Indian Airlines, Jet Airways, etc operate flights to Jammu on a regular basis",
+    "rail": "The most important railway station in the entire state of Jammu and Kashmir is that of Jammu only and is known as Jammu Tawi station. The station is well connected with almost all the key cities of India.",
+    "road": "Jammu has good network of roads connecting it with all major cities like Delhi, Amritsar, Ambala, Chandigarh, Ludhiana, Jalandhar, Shimla, etc."
+  },
+  "major_buddhist_places": [
+    {
+      "title": "LEH - Ladakh",
+      "desc": ["Leh is the district headquarter of Ladakh situated at an altitude of 3500 metres. Hemis, the largest of the gompas, founded in the 17th century, is the most accessible of all the monasteries in Ladakh. Other monasteries are Shey (15 kms. From Leh), Spituk (8 kms. From Leh), Thiksey (17 kms. From Leh). Leh is connected by flights from Delhi, Jammu and Chandigarh.",
+      "If you are in love, visit Leh, even if only with the Hills. This fantastic place in Ladakh has a dreamy landscape, and a cool weather, with some of the most colourful people in the world. An old school of Tibetan Buddhism, the rituals of the folk are as interesting as their handicrafts and behavior. And by interesting I mean, interesting, very interesting, for scholars and layman alike"],
+      "location": "The administrative capital of Ladakh, Leh, is situated at an altitude of 3505 m from the sea level and falls in Jammu and Kashmir. In the map you'll find it at the head, in northernmost part.",
+      "attractions": [
+        {
+          "title": "Leh Mosque",
+          "desc": "The mosque presents an amalgamation of Trkeyish and Indian architecture and a splendid monument in Green and white."
+        },
+        {
+          "title": "The Leh Palace",
+          "desc": "The 17th century palace closely resembles to that of Lhasa, both in architecture and styling. The top of the namgyal hill, and above the palace is the Victory tower, towered in the memory of victory over Kashmiri Balti army."
+        },
+        {
+          "title": "The Namgyal Tsempo gompa",
+          "desc": "Built by King Tashi Namgyal, this gompa, with a gold idol of Buddha and some rare artifacts of architectural splendour, this gompa , on Namgyal Tsemo peak is worth a visit, if only human eyes are still open."
+        }
+      ],
+      "excrusion": [
+        {
+          "title": "Spituk Gompa",
+          "desc": "At a distance of 8 km, this Gompa is one of the best Buddhism architectures of 15th century, most probably for the Buddhist monks' meditation and learning."
+        }
+      ],
+      "getThere": {
+        "air": "Leh airport is connected to all major Indian cities.",
+        "rail": "Rail routes are not convenient since they are far, nearest station is at Jammu.",
+        "road": "Road journeys, rather say, safaris are exciting, the main route being Leh-Srinagar-Leh."
+      }
+
+    }
+  ],
+  "otherOpts": [
+    {
+      "name": "Hemis Monastery",
+      "link": "/hemis-monastery"
+    },
+    {
+      "name": "Lamayuru Monastery",
+      "link": "/lamayuru-monastery"
+    },
+    {
+      "name": "Thiksey Monastery", 
+      "link": "/thiksey-monastery"
+    },
+    {
+      "name": "Spituk Monastery",
+      "link": "/spituk-monastery"
+    },
+    {
+      "name": "Jammu Tour",
+      "link": "/jammu"
+    },
+    {
+      "name": "Srinagar Tour",
+      "link": "/srinagar"
+    },
+    {
+      "name": "Gulmarg Tour",
+      "link": "/gulmarg"
+    },
+    {
+      "name": "Sonamarg Tour",
+      "link": "/sonamarg"
+    }
+  ]
+}

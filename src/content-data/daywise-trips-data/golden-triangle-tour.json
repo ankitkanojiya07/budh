@@ -1,0 +1,43 @@
+{
+  "name": "Golden Triangle Tour",
+  "duration": "6 nights / 7 days",
+  "link": "/golden-triangle-tour",
+  "destination": "Delhi - Jaipur - Agra - Delhi",
+  "sketchProgram": [
+    {
+      "day": "Day 01",
+      "title": "Arrive Delhi",
+      "desc": "On arrival traditional welcome is given by the Indian Horizons representative and transferred to the hotel where your room is ready to welcome you and give you the first taste of Indian Hospitality. Overnight at Delhi."
+    },
+    {
+      "day": "Day 02",
+      "title": "In Delhi",
+      "desc": "0800 Hrs Indian Horizons representative would be there in the lobby to update you with the full day sightseeing of Delhi. The sightseeing is a mixture of historical monuments along with some architectural grandeur like Lotus Temple. Overnight at Delhi Optional activities Buddhist Tours & Travels would organize for you in Delhi \na) Light and Sound Show \n b) Traditional Indian Dinner"
+    },
+    {
+      "day": "Day 03",
+      "title": "Delhi / Jaipur",
+      "desc": "After breakfast drive to Jaipur (250 Kms / 5 Hrs). After arrival, visit the local markets that still follow 500-year-old business traditions. Overnight at Jaipur."
+    },
+    {
+      "day": "Day 04",
+      "title": "In Jaipur",
+      "desc": "Experience the first taste of Maharaja with an Elephant Ride at Amber Fort. Explore the miniature of City Palace with Indian Horizons experienced guide. Overnight at Jaipur Optional activities Buddhist Tours & Travels would organize for you in Jaipur\na) Cultural Evening\nb) Traditional Rajasthani Dinner"
+    },
+    {
+      "day": "Day 05",
+      "title": "Jaipur / Agra",
+      "desc": "After your breakfast drive to Agra covering a distance of 250 Kms/ 05 Hrs enroute sightseeing of Fatehpur Sikri, a saga of craftsmanship. After refreshing up at the hotel explore the city of Mughal architectural that would leave you spell bound. Your visit to the Taj Mahal with Indian Horizons guide would confront the true meaning of Love for Mumtaj. Overnight at Agra\nBuddhist Tours & Travels professional photographers would capture some special moments with you and Taj Mahal that would be gifted before your departure as souvenirs"
+    },
+    {
+      "day": "Day 06",
+      "title": "Agra / Delhi",
+      "desc": "After breakfast you have the option to visit Taj Mahal once again with Indian Horizons guide or explore the city at your own. Later drive to Delhi enroute Sikandra covering a distance of 230 Kms/ 04 Hrs. Overnight at Delhi."
+    },
+    {
+      "day": "Day 07",
+      "title": "Delhi / Onward Destination",
+      "desc": "Morning after breakfast free time to explore Delhi. In time transfer to the airport escorted with Indian Horizons representative for your flight to onward destination."
+    }
+  ]
+}

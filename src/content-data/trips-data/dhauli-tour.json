@@ -1,0 +1,34 @@
+{
+  "name": "Dhauli Tour",
+  "mainDesc": "Dating from 260 BC the Dhauli edicts give detailed instructions to Ashoka's administrators to rule his subjects with gentleness and fairness. Driving down the Puri-Konark Highway from Bhubaneshwar one comes across Dhauli hill on the banks of the River Daya. Surrounded by the soothing greenery of paddy fields, lies the 3rd Century BC Ashokan Rock Edict, a memory of the gruesome war that transformed Ashoka, the great warrior into a Buddhist missionary. The Peace Pagoda built in collaboration with the Kalinga-Japanese Buddhist Sangha, on the opposite hill, is completely modern and is an excellent foil.",
+  "para": [
+    "110 kms from Bhubaneshwar, these three hills combinedly present the rich Buddhist heritage of Orissa. Once the seat of a flourishing Buddhist university called 'Tushpagiri Mahavihara', these hills still have extensive ruins of brick monasteries, sculpted stone portals and Buddhist images."
+  ],
+  "majorBuddhistAttraction": [
+    {
+      "title": "Lalitagiri",
+      "desc": "Lalitagiri is situated on a small hill and has a large number of votive stupas and the remains of a chaitya hall. Also noteworthy are the large number of Buddha figures housed in the Site Museum. The earliest Buddhist complex of 1st century A.D. includes a huge brick monastery, the remains of a chaitya hall, a number of votive stupas and a renovated stone stupa at the apex of a small rugged sandstone hill."
+    },
+    {
+      "title": "Ratnagiri",
+      "desc": "At Ratnagiri, excavations revealed the establishment of a Buddhist centre from the time of Narasimha Gupta Baladitya (first half of the sixth century A.D.). Located in the fertile Birupa river valley, 90 kms from Bhubaneshwar, Ratnagiri was a great centre of Vajrayana Buddhism till the 12th century and played a key role in the development of the Kalachakratantra during the 10th century."
+    },
+    {
+      "title": "Udaigiri",
+      "desc": "5 kms from Ratnagiri, Udaigiri houses the remains of a sprawling monastery accessible through a long stairway. Rock-cut sculptures adorn the hilltop. Excavations revealed a complex of brick monastery with many Buddhist sculptures. The site lies at the foothills of a large hill and is backed by picturesque surroundings."
+    },
+    {
+      "title": "Ashokan Rock Edict at Dhauli",
+      "desc": "The Ashokan Rock Edict at Dhauli, dating to 260 BC, is a testimony to Emperor Ashoka's transformation from a warrior to a Buddhist missionary. The edicts advise administrators to rule with gentleness and fairness."
+    },
+    {
+      "title": "Peace Pagoda at Dhauli",
+      "desc": "A modern structure built in collaboration with the Kalinga-Japanese Buddhist Sangha, the Peace Pagoda stands on a hill opposite the Ashokan Rock Edict and symbolizes peace and spiritual renewal."
+    }
+  ],
+  "getThere": {
+    "air": "Bhubaneshwar is well linked by air to Delhi, Chennai, Varanasi, Nagpur, Calcutta, and Vishakapatnam on daily basis flights by Indian Airlines.",
+    "rail": "Super fast trains connect Bhubaneshwar to major cities of India.",
+    "road": "Bhubaneshwar is well linked to the rest of India by the national highways."
+  }
+}

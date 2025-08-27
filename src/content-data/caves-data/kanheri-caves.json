@@ -1,0 +1,12 @@
+{
+  "name": "Kanheri Caves Tour",
+  "location": "Approximately 10 km from Borivali, Mumbai",
+  "foundedIn": "1st century BC to 9th century AD",
+  "para": ["Kanheri Caves are situated in the heart of the Sanjay Gandhi National Park, Maharashtra. They lie at a distance of approximately 10 km from Borivali, Mumbai. They are almost 109 in number and date back to somewhere between 1st century BC and 9th century AD. Kanheri Caves signify a golden beginning and the end of Buddhism in the northern India. Buddhist Monks as well as traders, who traveled for religious favors, used to make use of these caves on a frequent basis.",
+  "At the top of the caves stand exquisite sculptures of goddess Tara and Goddess Bhrukti. The central structure is that of Avalokiteswara, with five symbols, each in the right as well as the left. Another major attraction of Kanheri Caves is the Chaitya Cave, dating back to somewhere between 4th century AD and 5th century AD. Magnificent decorative woodwork embellishes the roof of this cave. The outer sides of the wall are adorned with sculptured statues of Buddha, mainly the Avalokiteswara incarnation."],
+  "getThere": {
+    "air": "The nearest airport is that of Mumbai",
+    "rail": "The Borivali railway station is the nearest. However, one may go to the Chatrapati Shivaji Terminus also, which is well connected with all the major cities of India",
+    "road": "One can easily get bus services from Mumbai"
+  }
+}

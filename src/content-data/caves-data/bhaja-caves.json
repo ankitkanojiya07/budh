@@ -1,0 +1,13 @@
+{
+  "name": "Bhaja Caves Tour",
+  "location": "Approximately 12 km from Lonavla",
+  "foundedIn": "2nd Century (Early Theravadin phase of Buddhism)",
+  "para": ["The Bhaja Caves come under the Aurangabad district of Maharashtra. They are situated at a distance of approximately 12 km from Lonavla. It is believed that Bhaja caves date back to the 2nd century, i.e. to the rule of Mauryans in India, in the early Theravadin phase of Buddhism. There are eighteen caves in toto and each other of them is adorned with magnificently chiseled images of Lord Buddha with different postures. Along with that, there are also some representations of Buddha, in symbolic terms",
+
+  "Also embellishing the Bhaja caves are the images of some animals and situations of some of the Buddhist tales. The twelfth cave, also the biggest one, comprises of a prayer hall and boasts of splendid ancient Buddhist architecture. In the last cave is a 'Dancing couple' structure, a must see attraction of Bhaja. One of the oldest caves in India, Bhaja Caves comprises of a number of Viharas, which are mainly used as hostels for the Buddhist monks being taught there. Last but not the least, are the amazing stupas inside as well as outside the caves."],
+  "getThere": {
+    "air": "The airports nearest to the caves are that of Pune and Mumbai.",
+    "rail": "The nearest railway station is at Malavil, approximately 3 km from the Bhaja village.",
+    "road": "One can easily reach Bhaja from Lonavla, approximately 12 km from there."
+  }
+}

@@ -209,7 +209,7 @@ export default function TourDetailPage() {
                         <section className="relative bg-gray-50 p-6 rounded-lg overflow-hidden">
                             {/* Background watermarks */}
                             <div id='f-wtrmrk' className="absolute inset-0 bg-[url('/bt.png')] bg-contain bg-center bg-no-repeat opacity-10 pointer-events-none" ></div>
-                            <div id='s-wtrmrk' className="absolute sm:-bottom-[8vh] sm:-right-[5vh] md:-bottom-[13vh] md:-right-[10vh] w-40 h-40 sm:w-56 sm:h-56 bg-[url('/lotus/buddh_1.png')] bg-no-repeat bg-right-bottom bg-contain opacity-30 pointer-events-none"></div>
+                            <div id='s-wtrmrk' className="absolute -bottom-[13vh] -right-[10vh] w-40 h-40 sm:w-56 sm:h-56 bg-[url('/lotus/buddh_1.png')] bg-no-repeat bg-right-bottom bg-contain opacity-30 pointer-events-none"></div>
                             
                             {/* Content with relative positioning */}
                             <div className="relative z-10">

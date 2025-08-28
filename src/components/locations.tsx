@@ -155,15 +155,43 @@ const Locations = () => {
             const hasHeritage = !!HERITAGE_BY_STATE[title as keyof typeof HERITAGE_BY_STATE];
             
             if (hasHeritage) {
-                target.style.opacity = '0.85';
-                target.style.transform = 'scale(1.02)';
+                // Enhanced hover effects for more prominent "coming out" effect
+                target.style.opacity = '0.95';
+                target.style.transform = 'scale(1.08) translateY(-10px)';
+                target.style.filter = 'drop-shadow(0 8px 16px rgba(239, 127, 0, 0.3)) drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2))';
+                target.style.strokeWidth = '2.5';
+                target.style.stroke = '#ea580c'; // Darker orange on hover
+                target.style.fill = '#fef3c7'; // Light orange fill on hover
+                target.style.zIndex = '1000';
+                target.style.transition = 'all 300ms cubic-bezier(0.4, 0, 0.2, 1)';
+                
+                // Add a subtle glow effect
+                target.style.boxShadow = '0 0 20px rgba(239, 127, 0, 0.4)';
             }
         };
 
         const handleMouseLeave = (ev: MouseEvent) => {
             const target = ev.currentTarget as SVGPathElement;
+            const title = target.getAttribute('title') || target.getAttribute('name') || '';
+            const isSelected = title === selectedState;
+            
+            // Reset to normal state or selected state
+            if (isSelected) {
+                target.style.fill = '#f97316'; // orange-500 for selected
+                target.style.stroke = '#ea580c'; // orange-600 for selected
+                target.style.strokeWidth = '1.2';
+            } else {
+                target.style.fill = '#ffffff'; // white for normal
+                target.style.stroke = '#ef7f00'; // original orange for normal
+                target.style.strokeWidth = '0.8';
+            }
+            
             target.style.opacity = '1';
-            target.style.transform = 'scale(1)';
+            target.style.transform = 'scale(1) translateY(0)';
+            target.style.filter = 'none';
+            target.style.zIndex = 'auto';
+            target.style.boxShadow = 'none';
+            target.style.transition = 'all 200ms ease';
         };
 
         // Close tooltip/modal when clicking outside
@@ -178,16 +206,28 @@ const Locations = () => {
         document.addEventListener('click', handleOutsideClick);
 
         // Apply styles and event listeners to all paths
-        allPaths.forEach((p) => {
+        allPaths.forEach((p, index) => {
             const title = p.getAttribute('title') || p.getAttribute('name') || '';
             const hasHeritage = !!HERITAGE_BY_STATE[title as keyof typeof HERITAGE_BY_STATE];
             
             p.style.fill = '#ffffff';
             p.style.stroke = '#ef7f00';
             p.style.strokeWidth = '0.8';
-            p.style.transition = 'all 200ms ease';
+            p.style.transition = 'all 300ms cubic-bezier(0.4, 0, 0.2, 1)';
             p.style.cursor = hasHeritage ? 'pointer' : 'default';
             p.style.transformOrigin = 'center';
+            p.style.willChange = 'transform, filter, stroke-width, fill, stroke';
+            p.style.backfaceVisibility = 'hidden';
+            p.style.transform = 'translateZ(0)'; // Force hardware acceleration
+            
+            // Add staggered entrance animation
+            p.style.opacity = '0';
+            p.style.transform = 'scale(0.95) translateZ(0)';
+            
+            setTimeout(() => {
+                p.style.opacity = '1';
+                p.style.transform = 'scale(1) translateZ(0)';
+            }, index * 25); // Stagger by 25ms for smoother animation
 
             if (hasHeritage) {
                 p.addEventListener('mouseenter', handleMouseEnter);
@@ -269,7 +309,7 @@ const Locations = () => {
                     Interactive Heritage Map
                 </h2>
                 <p className="text-gray-600 max-w-2xl mx-auto px-4">
-                    Click on any state to explore Buddhist heritage sites and monuments across India
+                    Hover over any state to see it come to life! Click to explore Buddhist heritage sites and monuments across India
                 </p>
             </div>
 

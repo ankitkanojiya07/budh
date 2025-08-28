@@ -42,18 +42,22 @@ const ContactBar = () => {
     }, []);
 
     return (
-        <div ref={containerRef} className={"w-[dvw] p-6 py-36 hidden md:flex items-center justify-center gap-6 bg-[url('/tour-package-header-images/2.jpeg')] text-white bg-cover bg-center bg-no-repeat bg-fixed"}>
-            {
-                bardata && bardata.map((item,i) => (
-                    <div key={i} className={"flex flex-col items-center justify-center gap-4 text-center w-[30vw]"}>
-                        <div className={"relative w-20 h-20"}>
-                            <Image src={item.icn} fill alt={item.title}/>
-                        </div>
-                        <h3 className={"text-2xl"}>{item.title}</h3>
-                        <p className={"text-lg"}>{item.desc}</p>
-                    </div>
-                ))
-            }
+        <div className={"w-full bg-[url('/tour-package-header-images/2.jpeg')] text-white bg-cover bg-center bg-no-repeat bg-fixed"}>
+            <div className={"px-4 sm:px-6 lg:px-8 py-16 sm:py-24"}>
+                <div ref={containerRef} className={"grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto"}>
+                    {
+                        bardata && bardata.map((item,i) => (
+                            <div key={i} className={"flex flex-col items-center justify-center gap-4 text-center"}>
+                                <div className={"relative w-16 h-16 sm:w-20 sm:h-20"}>
+                                    <Image src={item.icn} fill alt={item.title}/>
+                                </div>
+                                <h3 className={"text-xl md:text-2xl"}>{item.title}</h3>
+                                <p className={"text-sm md:text-base"}>{item.desc}</p>
+                            </div>
+                        ))
+                    }
+                </div>
+            </div>
         </div>
     )
 }

@@ -1,16 +1,11 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 import { Lora, Cinzel_Decorative, Cinzel, Playfair } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PopUpContact from "@/components/PopUpContact";
 import React from "react";
-
-// const times = localFont({
-//   src: "../fonts/times.ttf",
-//   variable: "--font-times",
-// })
+import HeaderNew from "@/components/header-new";
 
 const lora = Lora({
   weight: ["400","500","600","700"],
@@ -49,9 +44,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`antialiased ${lora.variable} ${cinzelDecorative.variable} ${cinzel.variable} ${playfair.variable} font-lora`}
+        className={`antialiased ${lora.variable} ${cinzelDecorative.variable} ${cinzel.variable} ${playfair.variable}`}
       >
-        <Header />
+        <HeaderNew />
         {children}
         <Footer />
         <PopUpContact />

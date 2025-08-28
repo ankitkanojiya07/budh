@@ -1,14 +1,11 @@
 'use client';
-import {useEffect, useRef, useState} from 'react';
+import {useRef, useState} from 'react';
 import Link from 'next/link';
-import {gsap, useGSAP} from '@/utils/gsapUtil';
-import {ScrollTrigger} from "gsap/dist/ScrollTrigger";
 
 import {ajantaelora_data,bodhgaay_data,sarnath_data, kapilvastu_data, rajgir_data, nalanda_data, varanasi_data, lumbini_data, kushinagar_data, sravasti_data, vaishali_data, sankisa_data, sikkim_data, ladakh_data, tabo_data, tawang_data} from '@/content-data/trips-data/tirpDataImporter';
 const AllToursPage = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const containerRef = useRef<HTMLDivElement>(null);
-    const cardsRef = useRef<HTMLDivElement[]>([]);
     
     const allTours = [
         ajantaelora_data, 
@@ -38,27 +35,6 @@ const AllToursPage = () => {
             (tour.mainDesc && tour.mainDesc.toLowerCase().includes(searchTerm.toLowerCase()));
     });
 
-   useGSAP(() => {
-        if (containerRef.current && cardsRef.current.length) {
-            gsap.fromTo(cardsRef.current,
-                {
-                    opacity: 0,
-                    y: 100
-                },
-                {
-                    opacity: 1,
-                    y: 0,
-                    duration: 1,
-                    stagger: 0.2,
-                    scrollTrigger: {
-                        trigger: containerRef.current,
-                        start: "top center",
-                        end: "bottom center",
-                    }
-                }
-            );
-        }
-    }, []);
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
@@ -98,11 +74,9 @@ const AllToursPage = () => {
             <div ref={containerRef} className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 overflow-hidden">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
                     {filteredTours.map((tour, index) => (
-                        <div 
+                        <Link 
+                            href={`/tours/${formatTourLink(tour.name)}`}
                             key={index} 
-                            ref={(el) => {
-                                if (el) cardsRef.current[index] = el;
-                            }}
                             className="relative overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group"
                         >
                             {/* Image Section */}
@@ -123,7 +97,7 @@ const AllToursPage = () => {
                                     </h3>
                                 </Link>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </div>

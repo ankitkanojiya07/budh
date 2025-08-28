@@ -110,9 +110,6 @@ const page = () => {
             {/* Contact Components */}
             {/* <ContactBar /> */}
             <ContactForm />
-            <div className="w-full text-center">
-                <h2 className="text-im-orange text-[3vw] py-4">Heritage Map</h2>
-            </div>
             <Locations />
         </main>
     )

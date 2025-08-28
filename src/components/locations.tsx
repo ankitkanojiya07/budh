@@ -73,17 +73,28 @@ const Locations = () => {
             svgEl.setAttribute('viewBox', vb);
         }
 
-        // Responsive sizing
+        // Responsive sizing (base on parent width to avoid compounding shrink)
         const updateMapSize = () => {
-            const containerWidth = containerRef.current?.clientWidth || 800;
-            const mapWidth = isMobile ? Math.min(containerWidth * 0.9, 350) : Math.min(containerWidth * 0.8, 600);
+            const baseWidth = containerRef.current?.parentElement?.clientWidth || window.innerWidth || 800;
+            const mapWidth = isMobile ? Math.min(baseWidth * 0.9, 350) : Math.min(baseWidth * 0.8, 600);
             svgEl.style.width = `${mapWidth}px`;
             svgEl.style.height = 'auto';
             svgEl.style.maxWidth = '100%';
+            svgEl.style.display = 'block';
+            svgEl.style.marginLeft = 'auto';
+            svgEl.style.marginRight = 'auto';
+            (containerRef.current as HTMLDivElement).style.width = '100%';
+        };
+
+        // Debounce resize to prevent jitter and compounding calculations
+        let resizeRaf: number | null = null;
+        const onResize = () => {
+            if (resizeRaf) cancelAnimationFrame(resizeRaf);
+            resizeRaf = requestAnimationFrame(updateMapSize);
         };
 
         updateMapSize();
-        window.addEventListener('resize', updateMapSize);
+        window.addEventListener('resize', onResize);
 
         // Add state labels
         allPaths.forEach((path) => {
@@ -136,12 +147,28 @@ const Locations = () => {
                 });
                 setTooltip(t => ({ ...t, visible: false }));
             } else {
-                // On desktop, show tooltip
+                // On desktop, show tooltip near the click and clamp inside container
                 const containerRect = containerRef.current!.getBoundingClientRect();
+                const relX = ev.clientX - containerRect.left;
+                const relY = ev.clientY - containerRect.top;
+
+                const TOOLTIP_WIDTH = 320; // px
+                const TOOLTIP_HEIGHT = 200; // approximate
+                const OFFSET = 12; // px offset from cursor
+
+                const clampedX = Math.min(
+                    Math.max(8, relX + OFFSET),
+                    (containerRect.width - TOOLTIP_WIDTH - 8)
+                );
+                const clampedY = Math.min(
+                    Math.max(8, relY + OFFSET),
+                    (containerRect.height - TOOLTIP_HEIGHT - 8)
+                );
+
                 setTooltip({
                     visible: true,
-                    x: ev.clientX - containerRect.left,
-                    y: ev.clientY - containerRect.top,
+                    x: clampedX,
+                    y: clampedY,
                     stateName: title,
                     heritageSites: heritage
                 });
@@ -248,7 +275,8 @@ const Locations = () => {
                 if ((p as any)._onClick) p.removeEventListener('click', (p as any)._onClick);
             });
             document.removeEventListener('click', handleOutsideClick);
-            window.removeEventListener('resize', updateMapSize);
+            window.removeEventListener('resize', onResize);
+            if (resizeRaf) cancelAnimationFrame(resizeRaf);
         };
     }, [isMobile]);
 
@@ -313,15 +341,15 @@ const Locations = () => {
                 </p>
             </div>
 
-            <div ref={containerRef} className="relative" />
+            <div ref={containerRef} className="relative mx-auto flex items-center justify-center w-full" />
 
             {/* Desktop Tooltip */}
             {tooltip.visible && !isMobile && (
                 <div
-                    className="absolute z-20 bg-white border-2 border-im-orange shadow-2xl rounded-lg p-4 max-w-sm transform -translate-x-1/2"
+                    className="absolute z-20 bg-white border-2 border-im-orange shadow-2xl rounded-lg p-4 w-80"
                     style={{ 
-                        left: tooltip.x, 
-                        top: tooltip.y - 10,
+                        left: tooltip.x,
+                        top: tooltip.y,
                         filter: 'drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1))'
                     }}
                 >

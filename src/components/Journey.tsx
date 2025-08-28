@@ -1,15 +1,16 @@
 import React from 'react';
+import Link from 'next/link';
 
 const sectionRenderer = (data: any, isImageLeft: boolean) => {
     return (
-        <div className={`min-w-full w-full flex flex-col lg:flex-row ${isImageLeft ? 'lg:flex-row-reverse' : ''} w-full`}>
+        <div className={`bg-dim-pink min-w-full w-full flex flex-col lg:flex-row ${isImageLeft ? 'lg:flex-row-reverse' : ''} w-full`}>
             {/* Left Section - Content */}
-            <div id={"j-left"} className={`bg-dim-pink w-full lg:w-1/2 p-8 flex flex-col justify-center gap-4 order-1 lg:order-1`}>
+            <div id={"j-left"} className={`w-full lg:w-1/2 p-8 flex flex-col justify-center gap-4 order-1 lg:order-1`}>
                 <p className={"text-base md:text-lg lg:text-xl"}>{data.smallHeading}</p>
-                <h2 className={"bg-gradient-to-r from-orange-700 via-amber-600 to-orange-800 bg-clip-text text-transparent mb-4 font-serif text-2xl sm:text-3xl md:text-4xl leading-tight font-semibold"}>{data.mainHeadingL1} <br /> {data.mainHeadingL2}</h2>
+                <h2 className={"bg-gradient-to-r from-orange-700 via-amber-600 to-orange-800 bg-clip-text text-transparent mb-4 font-serif text-2xl sm:text-3xl md:text-4xl leading-tight font-semibold"}>{data.mainHeadingL1} {data.mainHeadingL2}</h2>
                 <div>
                     <p className={"text-justify mb-4 md:mb-6 text-medium w-full lg:w-[90%] lg:pr-6"}>{data.desc}</p>
-                    <button className={"px-4 md:px-6 py-2 text-base text-white bg-im-orange cursor-pointer hover:bg-im-orange/90 transition-colors duration-300"}>{data.btnText}</button>
+                    <Link href="/allTours" className={"px-4 md:px-6 py-2 text-base text-white bg-im-orange cursor-pointer hover:bg-im-orange/90 transition-colors duration-300"}>{data.btnText}</Link>
                 </div>
             </div>
             {/* Right Section - image */}

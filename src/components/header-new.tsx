@@ -19,7 +19,7 @@ export default function HeaderNew() {
   const navigationItems = [
     { name: "Home", link: "/" },
     { name: "About", link: "/about" },
-    { name: "Services", link: "/services" },
+    { name: "Tours", link: "/allTours" },
     { name: "Contact", link: "/contact" },
   ];
 

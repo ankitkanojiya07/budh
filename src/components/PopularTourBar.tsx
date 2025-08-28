@@ -4,7 +4,7 @@ import bodhgaay_data from "@/content-data/trips-data/bodhgaya-tour.json";
 import sarnath_data from "@/content-data/trips-data/sarnath-tour.json";
 import kapilvastu_data from "@/content-data/trips-data/kapilvastu-tour.json";
 import Link from "next/link";
-import { useRef, useEffect } from 'react';
+import { useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import {useGSAP} from "@gsap/react";
@@ -12,7 +12,7 @@ import {useGSAP} from "@gsap/react";
 const PopularTourBar = () => {
     const popularTours = [ajantaelora_data, bodhgaay_data, sarnath_data];
     const containerRef = useRef<HTMLDivElement>(null);
-    const cardsRef = useRef<HTMLDivElement[]>([]);
+    const cardsRef = useRef<HTMLElement[]>([]);
 
     const formatTourLink = (name: string) => {
         return name.toLowerCase().split(' ').join('-').replace('-tour', '');
@@ -52,17 +52,19 @@ const PopularTourBar = () => {
                 <div className="flex flex-wrap gap-6 items-center justify-center">
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
                                 {popularTours.concat(popularTours).map((tour, i) => (
-                                    <div 
-                                        key={i} 
+                                    <Link
+                                        key={i}
+                                        href={`/tours/${formatTourLink(tour.name)}`}
                                         ref={(el) => {
                                             if (el) cardsRef.current[i] = el;
                                         }}
-                                        className="relative overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group"
+                                        className="relative overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer group block focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-600"
+                                        aria-label={tour.name}
                                     >
                                         {/* Image Section */}
                                         <div className="relative h-64 sm:h-[40vh] md:h-[75vh] overflow-hidden rounded-lg">
-                                            <img 
-                                                src="/tour-package-header-images/1.jpeg" 
+                                            <img
+                                                src="/tour-package-header-images/1.jpeg"
                                                 alt={tour.name}
                                                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                                             />
@@ -71,20 +73,18 @@ const PopularTourBar = () => {
                                         </div>
                                         {/* Title overlay */}
                                         <div className="absolute bottom-0 left-0 right-0 p-4">
-                                            <Link href={`/tours/${formatTourLink(tour.name)}`} className="block">
-                                                <h3 className="text-xl sm:text-2xl font-bold text-white text-center uppercase tracking-wide">
-                                                    {tour.name}
-                                                </h3>
-                                            </Link>
+                                            <h3 className="text-xl sm:text-2xl font-bold text-white text-center uppercase tracking-wide">
+                                                {tour.name}
+                                            </h3>
                                         </div>
-                                    </div>
+                                    </Link>
                                 ))}
                             </div>
                 </div>
             </div>
-            <div className="mt-10 space-x-4">
-                <Link className="bg-im-orange hover:bg-pri-orange cursor-pointer text-white px-4 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3 text-sm sm:text-base md:text-lg hover:bg-opacity-90 transition-all duration-300" href="/allTours">View All Destinations</Link>
-                <Link className="bg-im-orange hover:bg-pri-orange cursor-pointer text-white px-4 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3 text-sm sm:text-base md:text-lg hover:bg-opacity-90 transition-all duration-300" href="/tours">View All Packages</Link>
+            <div className="mt-10 flex flex-col sm:flex-row gap-4 items-stretch sm:items-center">
+                <Link className="bg-im-orange hover:bg-pri-orange cursor-pointer text-white px-4 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3 text-sm sm:text-base md:text-lg hover:bg-opacity-90 transition-all duration-300 w-full sm:w-auto text-center" href="/allTours">View All Destinations</Link>
+                <Link className="bg-im-orange hover:bg-pri-orange cursor-pointer text-white px-4 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3 text-sm sm:text-base md:text-lg hover:bg-opacity-90 transition-all duration-300 w-full sm:w-auto text-center" href="/tours">View All Packages</Link>
             </div>
         </div>
     );

@@ -72,7 +72,7 @@ const AllToursPage = () => {
 
             {/* Tours Grid Section */}
             <div ref={containerRef} className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 overflow-hidden">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 w-full">
                     {filteredTours.map((tour, index) => (
                         <Link 
                             href={`/tours/${formatTourLink(tour.name)}`}
@@ -82,7 +82,7 @@ const AllToursPage = () => {
                             {/* Image Section */}
                             <div className="relative sm:h-[40vh] md:h-[75vh] overflow-hidden rounded-lg">
                                 <img 
-                                    src="/popular-tour/ellora-pic.jpg" 
+                                    src={tour.image ? `/${tour.image}` : "/popular-tour/ellora-pic.jpg"} 
                                     alt={tour.name}
                                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                                 />

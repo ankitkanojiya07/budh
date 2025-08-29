@@ -42,23 +42,46 @@ interface TourDataMap {
     [key: string]: TourData;
 }
 
-// Image mapping for different tour types - each tour gets a specific header image
-const tourImages = {
-    buddhist_circuit: '/tour-package-header-images/1.jpeg',
-    buddhist_india: '/tour-package-header-images/2.jpeg',
-    buddhist_pilgrimage: '/tour-package-header-images/3.jpeg',
-    buddhist: '/tour-package-header-images/4.jpeg',
-    footstep_of_buddha: '/tour-package-header-images/5.jpeg',
-    ganga_sailing: '/tour-package-header-images/6.jpeg',
-    golden_triangle: '/tour-package-header-images/7.jpeg',
-    india_buddhist: '/tour-package-header-images/1.jpeg',
-    india_nepal_buddhist: '/tour-package-header-images/2.jpeg',
-    land_of_buddha: '/tour-package-header-images/3.jpeg',
-    way_to_enlightenment: '/tour-package-header-images/4.jpeg'
+// Image mapping for tour packages - using new .jpg images
+const tourPackageImages = {
+    buddhist_circuit: '/tour-package-header-images/1.jpg',
+    buddhist_india: '/tour-package-header-images/2.jpg',
+    buddhist_pilgrimage: '/tour-package-header-images/3.jpg',
+    buddhist: '/tour-package-header-images/4.jpg',
+    footstep_of_buddha: '/tour-package-header-images/5.jpg',
+    ganga_sailing: '/tour-package-header-images/6.jpg',
+    golden_triangle: '/tour-package-header-images/7.jpg',
+    india_buddhist: '/tour-package-header-images/8.jpg',
+    india_nepal_buddhist: '/tour-package-header-images/9.jpg',
+    land_of_buddha: '/tour-package-header-images/10.jpg',
+    way_to_enlightenment: '/tour-package-header-images/11.jpg'
 };
 
+// Image mapping for individual destination tours - using popular-tour images
+const destinationImages = {
+    'ajanta-ellora': '/popular-tour/1.jpg',
+    'bodhgaya': '/popular-tour/2.jpg',
+    'sarnath': '/popular-tour/3.jpg',
+    'kapilvastu': '/popular-tour/4.jpg',
+    'rajgir': '/popular-tour/5.jpg',
+    'nalanda': '/popular-tour/6.jpg',
+    'varanasi': '/popular-tour/7.jpg',
+    'lumbini': '/popular-tour/8.jpg',
+    'kushinagar': '/popular-tour/9.jpg',
+    'sravasti': '/popular-tour/10.jpg',
+    'vaishali': '/popular-tour/11.jpg',
+    'sankisa': '/popular-tour/12.jpg',
+    'sikkim': '/popular-tour/14.jpg',
+    'ladakh': '/popular-tour/15.jpg',
+    'tabo-monastery': '/popular-tour/16.jpg',
+    'tawang': '/popular-tour/17.jpg'
+};
+
+// Combined image mapping
+const tourImages = { ...tourPackageImages, ...destinationImages };
+
 // Default image for tours without specific mapping
-const defaultTourImage = '/tour-package-header-images/1.jpeg';
+const defaultTourImage = '/tour-package-header-images/1.jpg';
 
 // Helper to build slugs like "bodhgaya" from tour names
 const formatTourLink = (name: string) => name.toLowerCase().split(' ').join('-').replace('-tour', '');
@@ -166,7 +189,16 @@ export default function TourDetailPage() {
     const mainContentRef = useRef<HTMLDivElement>(null);
 
     // Get the appropriate image for the selected tour
-    const tourImage = tourImages[tourId as keyof typeof tourImages] || defaultTourImage;
+    let tourImage = tourImages[tourId as keyof typeof tourImages];
+    
+    // If no image found for tour package, try to get image from destination data
+    if (!tourImage && tripsDataFallback) {
+        const destinationSlug = formatTourLink(tripsDataFallback.name);
+        tourImage = destinationImages[destinationSlug as keyof typeof destinationImages];
+    }
+    
+    // Final fallback to default image
+    tourImage = tourImage || defaultTourImage;
 
     // Initial load animation
     useEffect(() => {

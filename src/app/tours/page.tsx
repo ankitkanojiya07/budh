@@ -8,34 +8,23 @@ interface TourDetail {
     value: string;
 }
 
-// Tour package header images
-const tourHeaderImages = [
-    '/tour-package-header-images/1.jpeg',
-    '/tour-package-header-images/2.jpeg',
-    '/tour-package-header-images/3.jpeg',
-    '/tour-package-header-images/4.jpeg',
-    '/tour-package-header-images/5.jpeg',
-    '/tour-package-header-images/6.jpeg',
-    '/tour-package-header-images/7.jpeg'
-];
-
-// Image mapping for different tour types - each tour gets a specific header image
+// Image mapping for different tour types - each tour gets a unique image from the new collection
 const tourImages = {
-    buddhist_circuit: '/tour-package-header-images/1.jpeg',
-    buddhist_india: '/tour-package-header-images/2.jpeg',
-    buddhist_pilgrimage: '/tour-package-header-images/3.jpeg',
-    buddhist: '/tour-package-header-images/4.jpeg',
-    footstep_of_buddha: '/tour-package-header-images/5.jpeg',
-    ganga_sailing: '/tour-package-header-images/6.jpeg',
-    golden_triangle: '/tour-package-header-images/7.jpeg',
-    india_buddhist: '/tour-package-header-images/1.jpeg',
-    india_nepal_buddhist: '/tour-package-header-images/2.jpeg',
-    land_of_buddha: '/tour-package-header-images/3.jpeg',
-    way_to_enlightenment: '/tour-package-header-images/4.jpeg'
+    buddhist_circuit: '/tour-package-header-images/1.jpg',
+    buddhist_india: '/tour-package-header-images/2.jpg',
+    buddhist_pilgrimage: '/tour-package-header-images/3.jpg',
+    buddhist: '/tour-package-header-images/4.jpg',
+    footstep_of_buddha: '/tour-package-header-images/5.jpg',
+    ganga_sailing: '/tour-package-header-images/6.jpg',
+    golden_triangle: '/tour-package-header-images/7.jpg',
+    india_buddhist: '/tour-package-header-images/8.jpg',
+    india_nepal_buddhist: '/tour-package-header-images/9.jpg',
+    land_of_buddha: '/tour-package-header-images/10.jpg',
+    way_to_enlightenment: '/tour-package-header-images/11.jpg'
 };
 
 // Default image for tours without specific mapping
-const defaultTourImage = '/tour-package-header-images/1.jpeg';
+const defaultTourImage = '/tour-package-header-images/1.jpg';
 
 export default function ToursPage() {
     const toursDetails: TourDetail[] = [
@@ -107,8 +96,8 @@ export default function ToursPage() {
                     <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl px-2 sm:px-4 lg:px-6 font-black text-im-orange mb-4 sm:mb-6 lg:mb-8 text-center">
                         Tour Packages
                     </h2>
-                    <div className="flex flex-wrap gap-6 items-center justify-center">
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+                    <div className="flex flex-wrap gap-2.5 items-center justify-center">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 w-full">
                             {toursDetails.map((tour, i) => (
                                 <Link 
                                     key={tour.value} 

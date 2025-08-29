@@ -124,13 +124,13 @@ export const NavItems = ({ items, className, onItemClick, visible = false , isCo
   return (
     <motion.div
       onMouseLeave={() => setHovered(null)}
-      className={`absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-2 text-sm font-medium transition duration-200 lg:flex lg:space-x-2 ${visible ? "text-black" : "text-white"} ${className}`}
+      className={`absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-2 text-sm font-medium transition duration-200 lg:flex lg:space-x-2 ${visible ? "text-[#ca3600]" : "text-white"} ${className}`}
     >
       {items.map((item, idx) => (
         <Link
           onMouseEnter={() => setHovered(idx)}
           onClick={onItemClick}
-          className={`relative px-4 py-2 hover:text-black transition-all text-lg ${visible ? "text-black" : isContactPage ? "text-black"   : "text-white"}`}
+          className={`relative px-4 py-2 hover:text-[#ca3600] transition-all text-lg ${visible ? "text-[#ca3600]" : isContactPage ? "text-black"   : "text-white"}`}
           key={`link-${idx}`}
           href={item.link}
         >
@@ -237,7 +237,7 @@ export const NavbarLogo = ({ visible = false , isContactPage}: { visible?: boole
           className="rounded-full"
         />
       </div>
-      <span className={`md:text-2xl text-base font-bold transition-colors duration-200 ${visible ? "text-black text-xl" :     isContactPage ? "text-black" : "text-white"}`}>
+      <span className={`md:text-2xl text-base font-bold transition-colors duration-200 ${visible ? "text-[#ca3600] text-xl" :     isContactPage ? "text-black" : "text-white"}`}>
         Buddhist Tour
       </span>
     </Link>
@@ -250,6 +250,7 @@ export const NavbarButton = ({
   children,
   className,
   variant = "primary",
+  visible = false,
   ...props
 }: {
   href?: string;
@@ -257,16 +258,19 @@ export const NavbarButton = ({
   children: React.ReactNode;
   className?: string;
   variant?: "primary" | "secondary" | "dark" | "gradient";
+  visible?: boolean;
 } & (
   | React.ComponentPropsWithoutRef<"a">
   | React.ComponentPropsWithoutRef<"button">
 )) => {
   const baseStyles =
-    "px-4 py-2 rounded-md bg-white button bg-white text-black text-sm font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center";
+    "px-4 py-2 rounded-md button text-sm font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center";
 
   const variantStyles = {
     primary:
-      "shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]",
+      visible 
+        ? "bg-[#ca3600] text-white shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+        : "bg-white text-black shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]",
     secondary: "bg-transparent shadow-none dark:text-white",
     dark: "bg-black text-white shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]",
     gradient:

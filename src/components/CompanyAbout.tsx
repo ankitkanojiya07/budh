@@ -109,7 +109,7 @@ const CompanyAbout = () => {
                                 className="w-full lg:w-80 xl:w-96 h-48 sm:h-56 lg:h-64 xl:h-72 relative overflow-hidden rounded-lg shadow-lg order-1 lg:order-2 flex-shrink-0"
                             >
                                 <Image
-                                    src="/discover/buddha.jpg"
+                                    src="/popular-tour/27.jpg"
                                     alt="Buddha Statue"
                                     fill
                                     className="object-cover"
@@ -142,7 +142,7 @@ const CompanyAbout = () => {
                                 className="w-full lg:w-80 xl:w-96 h-48 sm:h-56 lg:h-64 xl:h-72 relative overflow-hidden rounded-lg shadow-lg order-1 lg:order-2 flex-shrink-0"
                             >
                                 <Image
-                                    src="/journey/standing-monk.jpg"
+                                    src="/popular-tour/34.jpg"
                                     alt="Buddhist Monk"
                                     fill
                                     className="object-cover"
@@ -171,9 +171,23 @@ const CompanyAbout = () => {
                             ref={(el) => setContentRef(el, 6)}
                             className="text-center lg:text-right"
                         >
-                            <p className="text-sm sm:text-base lg:text-lg text-gray-600">With best regards</p>
-                            <p className="text-sm sm:text-base lg:text-lg text-gray-600">Sincerely,</p>
-                            <p className="text-sm sm:text-base lg:text-lg font-semibold text-pri-brown">For Buddhist Tour</p>
+                            <div className="inline-block relative rounded-lg p-4 overflow-hidden">
+                                {/* Background Image - only behind the text */}
+                                <div className="absolute inset-0 rounded-lg">
+                                    <Image
+                                        src="/lotus/buddh_1.png"
+                                        alt="Buddha background"
+                                        fill
+                                        className="object-contain opacity-20"
+                                    />
+                                </div>
+                                {/* Text Content */}
+                                <div className="relative z-10 space-y-1">
+                                    <p className="text-sm sm:text-base lg:text-lg text-gray-600">With best regards</p>
+                                    <p className="text-sm sm:text-base lg:text-lg text-gray-600">Sincerely,</p>
+                                    <p className="text-sm sm:text-base lg:text-lg font-semibold text-pri-brown">For Buddhist Tour</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

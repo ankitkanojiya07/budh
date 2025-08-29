@@ -38,14 +38,15 @@ export default function HeroForm() {
   };
 
   return (
-    <div className='w-full bg-white/45 p-5 rounded-2xl shadow-lg backdrop-blur-sm'>
-      <div className="relative w-full  mx-auto">
-
-      <form onSubmit={handleSubmit} className="relative bg-white rounded-xl px-3 py-2">
+    <div>
+      {/* 
+      Accommodation Form - Commented Out
+      
+      <form onSubmit={handleSubmit} className="relative bg-transparent rounded-xl px-3 py-2">
         <div className="flex flex-col lg:flex-row gap-6 items-center justify-between">
-          {/* Form Fields */}
+          Form Fields
           <div className="flex flex-col flex-1 w-full lg:flex-row gap-6 items-center">
-            {/* Accommodation Field */}
+            Accommodation Field
             <div className="flex gap-2 w-full items-center">
               <div>
                 <IconHome2 className='size-8 opacity-50'/>
@@ -64,10 +65,10 @@ export default function HeroForm() {
               </div>
             </div>
 
-            {/* Divider */}
-            <div className="hidden lg:block bg-[#f9e3d6] h-[70px] w-[0.728px] opacity-30" />
+            Divider - White line
+            <div className="hidden lg:block bg-white h-[70px] w-[0.728px] opacity-50" />
 
-            {/* Check-in Field */}
+            Check-in Field
             <div className="flex w-full gap-2 items-center">
               <div>
                 <IconCalendar className='size-8 opacity-50'/>
@@ -85,10 +86,10 @@ export default function HeroForm() {
               </div>
             </div>
 
-            {/* Divider */}
-            <div className="hidden lg:block bg-[#f9e3d6] h-[70px] w-[0.728px] opacity-30" />
+            Divider - White line
+            <div className="hidden lg:block bg-white h-[70px] w-[0.728px] opacity-50" />
 
-            {/* Check-out Field */}
+            Check-out Field
             <div className="flex w-full gap-2 items-center">
               <div>
                 <IconCalendar className='size-8 opacity-50'/>
@@ -106,10 +107,10 @@ export default function HeroForm() {
               </div>
             </div>
 
-            {/* Divider */}
-            <div className="hidden lg:block bg-[#f9e3d6] h-[70px] w-[0.728px] opacity-30" />
+            Divider - White line
+            <div className="hidden lg:block bg-white h-[70px] w-[0.728px] opacity-50" />
 
-            {/* Guests Field */}
+            Guests Field
             <div className="flex w-full gap-2 items-center">
               <div>
                 <IconUser className='size-8 opacity-50'/>
@@ -133,7 +134,7 @@ export default function HeroForm() {
             </div>
           </div>
 
-          {/* Search Button */}
+          Search Button
           <button
             type="submit"
             className="bg-[#e7ac72] p-4 max-w-[175px] w-full rounded-xl font-bold text-lg text-white hover:bg-[#d19a5f] transition-colors duration-200"
@@ -142,7 +143,7 @@ export default function HeroForm() {
           </button>
         </div>
       </form>
-    </div>
+      */}
     </div>
   );
 }

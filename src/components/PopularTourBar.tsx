@@ -3,6 +3,8 @@ import ajantaelora_data from "@/content-data/trips-data/ajanta-ellora-tour.json"
 import bodhgaay_data from "@/content-data/trips-data/bodhgaya-tour.json";
 import sarnath_data from "@/content-data/trips-data/sarnath-tour.json";
 import kapilvastu_data from "@/content-data/trips-data/kapilvastu-tour.json";
+import rajgir_data from "@/content-data/trips-data/rajgir-tour.json";
+import nalanda_data from "@/content-data/trips-data/nalanda-tour.json";
 import Link from "next/link";
 import { useRef } from 'react';
 import gsap from 'gsap';
@@ -10,7 +12,7 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import {useGSAP} from "@gsap/react";
 
 const PopularTourBar = () => {
-    const popularTours = [ajantaelora_data, bodhgaay_data, sarnath_data];
+    const popularTours = [ajantaelora_data, bodhgaay_data, sarnath_data, kapilvastu_data, rajgir_data, nalanda_data];
     const containerRef = useRef<HTMLDivElement>(null);
     const cardsRef = useRef<HTMLElement[]>([]);
 
@@ -49,9 +51,9 @@ const PopularTourBar = () => {
                     </h2>
                     <p className="px-2 sm:px-4 lg:px-6">Explore the most popular buddhist heritage sites in india.</p>
                 </div>
-                <div className="flex flex-wrap gap-6 items-center justify-center">
-                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
-                                {popularTours.concat(popularTours).map((tour, i) => (
+                <div className="flex flex-wrap gap-2.5 items-center justify-center">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 w-full">
+                                {popularTours.map((tour, i) => (
                                     <Link
                                         key={i}
                                         href={`/tours/${formatTourLink(tour.name)}`}
@@ -64,7 +66,7 @@ const PopularTourBar = () => {
                                         {/* Image Section */}
                                         <div className="relative h-64 sm:h-[40vh] md:h-[75vh] overflow-hidden rounded-lg">
                                             <img
-                                                src="/tour-package-header-images/1.jpeg"
+                                                src={`/${tour.image}`}
                                                 alt={tour.name}
                                                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                                             />

@@ -6,6 +6,7 @@ import {
   useScroll,
   useMotionValueEvent,
 } from "motion/react";
+import Link from "next/link";
 
 import React, { useRef, useState } from "react";
 
@@ -28,6 +29,7 @@ interface NavItemsProps {
   className?: string;
   onItemClick?: () => void;
   visible?: boolean;
+  isContactPage?: boolean;
 }
 
 interface MobileNavProps {
@@ -89,7 +91,7 @@ export const NavBody = ({ children, className, visible = false }: NavBodyProps) 
         boxShadow: visible
           ? "0 0 24px rgba(34, 42, 53, 0.06), 0 1px 1px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(34, 42, 53, 0.04), 0 0 4px rgba(34, 42, 53, 0.08), 0 16px 68px rgba(47, 48, 55, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1) inset"
           : "none",
-        width: visible ? "60%" : "100%",
+        width: visible ? "80%" : "100%",
         y: visible ? 20 : 0,
       }}
       transition={{
@@ -116,7 +118,7 @@ export const NavBody = ({ children, className, visible = false }: NavBodyProps) 
   );
 };
 
-export const NavItems = ({ items, className, onItemClick, visible = false }: NavItemsProps) => {
+export const NavItems = ({ items, className, onItemClick, visible = false , isContactPage}: NavItemsProps) => {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
@@ -125,10 +127,10 @@ export const NavItems = ({ items, className, onItemClick, visible = false }: Nav
       className={`absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-2 text-sm font-medium transition duration-200 lg:flex lg:space-x-2 ${visible ? "text-black" : "text-white"} ${className}`}
     >
       {items.map((item, idx) => (
-        <a
+        <Link
           onMouseEnter={() => setHovered(idx)}
           onClick={onItemClick}
-          className={`relative px-4 py-2 hover:text-black transition-all text-lg ${visible ? "text-black" : "text-white"}`}
+          className={`relative px-4 py-2 hover:text-black transition-all text-lg ${visible ? "text-black" : isContactPage ? "text-black"   : "text-white"}`}
           key={`link-${idx}`}
           href={item.link}
         >
@@ -139,7 +141,7 @@ export const NavItems = ({ items, className, onItemClick, visible = false }: Nav
             />
           )}
           <span className="relative z-20">{item.name}</span>
-        </a>
+        </Link>
       ))}
     </motion.div>
   );
@@ -220,9 +222,9 @@ export const MobileNavToggle = ({
   );
 };
 
-export const NavbarLogo = ({ visible = false }: { visible?: boolean }) => {
+export const NavbarLogo = ({ visible = false , isContactPage}: { visible?: boolean , isContactPage?: boolean }) => {
   return (
-    <a
+    <Link
       href="/"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal"
     >
@@ -235,10 +237,10 @@ export const NavbarLogo = ({ visible = false }: { visible?: boolean }) => {
           className="rounded-full"
         />
       </div>
-      <span className={`md:text-2xl text-base font-bold transition-colors duration-200 ${visible ? "text-black text-xl" : "text-white"}`}>
+      <span className={`md:text-2xl text-base font-bold transition-colors duration-200 ${visible ? "text-black text-xl" :     isContactPage ? "text-black" : "text-white"}`}>
         Buddhist Tour
       </span>
-    </a>
+    </Link>
   );
 };
 

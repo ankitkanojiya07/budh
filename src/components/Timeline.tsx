@@ -1,4 +1,5 @@
 "use client";
+import { useIsMobile } from "@/hook/use-is-moble";
 import {
   useMotionValueEvent,
   useScroll,
@@ -20,6 +21,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(0);
   const [activeCircles, setActiveCircles] = useState<Set<number>>(new Set());
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     if (ref.current) {
@@ -30,7 +32,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start 20%", "end 100%"],
+    offset: [isMobile ? "start 40%" : "start 20%", "end 100%"],
   });
 
   const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
@@ -39,7 +41,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
   // Create scroll-driven transforms for each card
   const cardTransforms = data.map((_, index) => {
     const startProgress = index / data.length;
-    const endProgress = Math.min((index + 1) / data.length, 1);
+    // const endProgress = Math.min((index + 1) / data.length, 1);
 
     return {
       opacity: useTransform(
@@ -75,47 +77,15 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     setActiveCircles(newActiveCircles);
   });
 
-  // Floating lotus petals animation
-  // const FloatingLotus = ({ delay = 0 }) => (
-  //   <motion.div
-  //     className="absolute opacity-20"
-  //     initial={{ opacity: 0, y: 100, rotate: 0 }}
-  //     animate={{
-  //       opacity: [0, 0.3, 0],
-  //       y: [-100, -200, -300],
-  //       rotate: [0, 180, 360],
-  //       x: [0, 50, -30, 0],
-  //     }}
-  //     transition={{
-  //       duration: 12,
-  //       repeat: Infinity,
-  //       delay,
-  //       ease: "easeInOut",
-  //     }}
-  //     style={{
-  //       left: `${Math.random() * 100}%`,
-  //       top: `${Math.random() * 100}%`,
-  //     }}
-  //   >
-  //     <div className="w-6 h-6 bg-gradient-to-br from-orange-200 to-amber-300 rounded-full transform rotate-45">
-  //       <div className="w-3 h-3 bg-gradient-to-br from-orange-300 to-amber-400 rounded-full absolute top-1 left-1"></div>
-  //     </div>
-  //   </motion.div>
-  // );
 
   return (
     <div className="w-full bg-gradient-to-b from-orange-50 via-amber-25 to-yellow-50 font-sans md:px-10 relative overflow-hidden" ref={containerRef}>
-      {/* Floating lotus petals */}
-      {/* {[...Array(8)].map((_, i) => (
-        <FloatingLotus key={i} delay={i * 2} />
-      ))}
-       */}
       {/* Subtle background pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-orange-200 via-transparent to-transparent"></div>
       </div>
 
-      <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
+      <div ref={ref} className="relative max-w-7xl mx-auto pb-20 px-6">
         {data.map((item, index) => {
           const isEven = index % 2 === 0;
           return (
@@ -127,7 +97,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               <>
                 {/* Left side content (for odd indices) */}
                 {!isEven && (
-                  <div className="grid grid-cols-2 w-full">
+                  <div className="md:grid grid-cols-2 w-full hidden">
                     <div className="z-40 relative">
                       <motion.div
                         className="z-40 relative"
@@ -196,11 +166,12 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                 <div
                   className={
                     isEven
-                      ? "sticky left-1/2 z-50 size-16  -translate-x-1/2"
-                      : "sticky right-1/2 z-50 size-16  translate-x-1/2"
+                      ? "sticky left-1/2 z-40 top-40  -translate-x-1/2 md:block hidden"
+                      : "sticky right-1/2 z-40 top-40  translate-x-1/2 md:block hidden"
                   }
                 >
-                  <motion.div
+                <div>
+                    <motion.div
                     className="relative h-16 w-16 flex items-center justify-center"
                     animate={{
                       scale: index === 0 ? 1 : activeCircles.has(index) ? 1 : 0,
@@ -244,10 +215,11 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                     </div>
                   </motion.div>
                 </div>
+                </div>
 
                 {/* Right side content (for even indices) */}
                 {isEven && (
-                  <div className="grid grid-cols-2 w-full">
+                  <div className="md:grid grid-cols-2 w-full hidden">
                     <motion.div
                       className="w-full h-full"
                       initial={{ opacity: 0, x: -30 }}
@@ -313,48 +285,56 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               </>
 
               {/* Mobile Layout - Enhanced */}
-              <div className="flex md:hidden w-full">
-                <div className="sticky flex items-center top-40 z-40 self-start">
+              <>
+                <div
+                  className="sticky md:hidden z-50 -ml-5 size-12"
+                >
                   <motion.div
-                    className="relative h-12 w-12 flex items-center justify-center mr-4"
+                    className="relative h-12 w-12 flex items-center justify-center"
                     animate={{
-                      rotate: activeCircles.has(index) ? [0, 360] : 0,
+                      scale: index === 0 ? 1 : activeCircles.has(index) ? 1 : 0,
                     }}
+                    initial={{ scale: 0 }}
                     transition={{
-                      duration: activeCircles.has(index) ? 15 : 0,
-                      repeat: activeCircles.has(index) ? Infinity : 0,
-                      ease: "linear",
+                      type: "tween",
                     }}
                   >
+                    {/* Outer ring - Dharma wheel inspired */}
                     <motion.div
-                      className={`h-12 w-12 rounded-full bg-gradient-to-br from-white to-orange-50 flex items-center justify-center transition-all duration-500 ${
+                      className={`absolute inset-0 rounded-full border-4 transition-all duration-500 ${
                         activeCircles.has(index)
-                          ? "shadow-[0_0_20px_rgba(251,191,36,0.8)]"
-                          : "shadow-lg"
+                          ? "border-gradient-to-r from-orange-400 via-amber-500 to-orange-600 shadow-[0_0_30px_rgba(251,191,36,0.6)]"
+                          : "border-orange-200"
                       }`}
                       animate={{
+                        borderColor: activeCircles.has(index)
+                          ? ["#fb923c", "#f59e0b", "#ea580c", "#fb923c"]
+                          : "#fed7aa",
                         scale: activeCircles.has(index) ? [1, 1.1, 1] : 1,
                       }}
                       transition={{
-                        duration: 2,
+                        duration: 3,
                         repeat: activeCircles.has(index) ? Infinity : 0,
                         ease: "easeInOut",
                       }}
-                    >
-                      <motion.div
-                        className={`h-6 w-6 rounded-full border-2 transition-all duration-500 ${
-                          activeCircles.has(index)
-                            ? "bg-gradient-to-br from-orange-400 to-amber-500 border-orange-300"
-                            : "bg-gradient-to-br from-orange-200 to-amber-300 border-orange-300"
-                        }`}
+                    />
+
+                    {/* Inner circle - Lotus inspired */}
+                    <div className="size-11">
+                      <Image
+                        src={item.circleImg}
+                        alt={item.title}
+                        width={80}
+                        height={80}
+                        className="rounded-full object-cover shadow-lg size-full"
                       />
-                    </motion.div>
+                    </div>
                   </motion.div>
                 </div>
 
-                <div className="flex-1">
+                <div className="flex-1 pl-2 mt-2 md:hidden">
                   <motion.div
-                    className="sticky top-40 z-40"
+                    // className="sticky top-40 z-40"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -374,7 +354,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                     {item.content}
                   </motion.div>
                 </div>
-              </div>
+              </>
             </div>
           );
         })}

@@ -7,6 +7,7 @@ import { useParams } from 'next/navigation';
 import Link from 'next/link';
 // Trips-data (destination) imports for fallback rendering
 import ajantaelora_data from "@/content-data/trips-data/ajanta-ellora-tour.json";
+import allahabad_data from "@/content-data/trips-data/allahabad-tour.json";
 import bodhgaay_data from "@/content-data/trips-data/bodhgaya-tour.json";
 import sarnath_data from "@/content-data/trips-data/sarnath-tour.json";
 import kapilvastu_data from "@/content-data/trips-data/kapilvastu-tour.json";
@@ -18,10 +19,13 @@ import kushinagar_data from "@/content-data/trips-data/kushinagar-tour.json";
 import sravasti_data from "@/content-data/trips-data/sravasti-tour.json";
 import vaishali_data from "@/content-data/trips-data/vaishali-tour.json";
 import sankisa_data from "@/content-data/trips-data/sankisa-tour.json";
+import sanchi_data from "@/content-data/trips-data/sanchi-tour.json";
 import sikkim_data from "@/content-data/trips-data/sikkim-tour.json";
 import ladakh_data from "@/content-data/trips-data/ladakh-tour.json";
 import tabo_data from "@/content-data/trips-data/tabo-tour.json";
 import tawang_data from "@/content-data/trips-data/tawang-tour.json";
+import nagarjunakonda_data from "@/content-data/trips-data/nagarjunakonda-tour.json";
+import dhauli_data from "@/content-data/trips-data/dhauli-tour.json";
 
 interface DayProgram {
     day: string;
@@ -74,7 +78,11 @@ const destinationImages = {
     'sikkim': '/popular-tour/14.jpg',
     'ladakh': '/popular-tour/15.jpg',
     'tabo-monastery': '/popular-tour/16.jpg',
-    'tawang': '/popular-tour/17.jpg'
+    'tawang': '/popular-tour/17.jpg',
+    'allahabad': '/popular-tour/18.jpg',
+    'sanchi': '/popular-tour/29.jpg',
+    'nagarjunakonda': '/popular-tour/18.jpg',
+    'dhauli': '/popular-tour/18.jpg',
 };
 
 // Combined image mapping
@@ -83,12 +91,23 @@ const tourImages = { ...tourPackageImages, ...destinationImages };
 // Default image for tours without specific mapping
 const defaultTourImage = '/tour-package-header-images/1.jpg';
 
-// Helper to build slugs like "bodhgaya" from tour names
-const formatTourLink = (name: string) => name.toLowerCase().split(' ').join('-').replace('-tour', '');
+// Known slug aliases to handle legacy/short links
+const slugAliases: Record<string, string> = {
+    'tabo': 'tabo-monastery',
+};
+
+// Helper to build slugs; removes a trailing "-tour" and trims stray hyphens
+const formatTourLink = (name: string) => {
+    const basic = name.toLowerCase().split(' ').join('-');
+    const withoutSuffix = basic.replace(/-tour$/, '');
+    return withoutSuffix.replace(/-+$/,'');
+};
 
 // Aggregate trips-data into a list for lookup
 const tripsDataList = [
     ajantaelora_data,
+    allahabad_data,
+    sanchi_data,
     bodhgaay_data,
     sarnath_data,
     kapilvastu_data,
@@ -103,7 +122,9 @@ const tripsDataList = [
     sikkim_data,
     ladakh_data,
     tabo_data,
-    tawang_data
+    tawang_data,
+    nagarjunakonda_data,
+    dhauli_data,
 ];
 
 function DayProgram({ program, index }: { program: DayProgram; index: number }) {
@@ -181,15 +202,16 @@ function DayProgram({ program, index }: { program: DayProgram; index: number }) 
 export default function TourDetailPage() {
     const params = useParams();
     const tourId = params.tourId as string;
+    const effectiveTourId = slugAliases[tourId] || tourId;
     
     const tourDataMap = dayWiseDataTourDataImporter() as TourDataMap;
-    const tourData = tourDataMap[tourId];
-    const tripsDataFallback = tripsDataList.find(t => formatTourLink(t.name) === tourId);
+    const tourData = tourDataMap[effectiveTourId];
+    const tripsDataFallback = tripsDataList.find(t => formatTourLink(t.name) === effectiveTourId);
 
     const mainContentRef = useRef<HTMLDivElement>(null);
 
     // Get the appropriate image for the selected tour
-    let tourImage = tourImages[tourId as keyof typeof tourImages];
+    let tourImage = tourImages[effectiveTourId as keyof typeof tourImages];
     
     // If no image found for tour package, try to get image from destination data
     if (!tourImage && tripsDataFallback) {
@@ -253,6 +275,9 @@ export default function TourDetailPage() {
                                     {t.destination && (
                                         <p className="text-gray-600"><span className="font-semibold">Destination:</span> {t.destination}</p>
                                     )}
+                                    {t.bestTime && (
+                                        <p className="text-gray-600"><span className="font-semibold">Best Time:</span> {t.bestTime}</p>
+                                    )}
                                 </div>
 
                                 {/* Description/Main Desc */}
@@ -299,6 +324,22 @@ export default function TourDetailPage() {
                                                 </div>
                                             ))}
                                         </div>
+                                    </div>
+                                )}
+
+                                {/* Getting There */}
+                                {t.getThere && (
+                                    <div className="space-y-2">
+                                        <h2 className="text-lg sm:text-xl font-semibold text-pri-brown">Getting There</h2>
+                                        {t.getThere.air && (
+                                            <p className="text-gray-600 text-sm sm:text-base"><span className="font-semibold">Air:</span> {t.getThere.air}</p>
+                                        )}
+                                        {t.getThere.rail && (
+                                            <p className="text-gray-600 text-sm sm:text-base"><span className="font-semibold">Rail:</span> {t.getThere.rail}</p>
+                                        )}
+                                        {t.getThere.road && (
+                                            <p className="text-gray-600 text-sm sm:text-base"><span className="font-semibold">Road:</span> {t.getThere.road}</p>
+                                        )}
                                     </div>
                                 )}
                             </div>

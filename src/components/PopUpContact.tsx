@@ -43,7 +43,7 @@ const PopUpContact = () => {
                 {/* Close Button */}
                 <button
                     onClick={handleClose}
-                    className="absolute top-2 right-3 text-white hover:text-gray-200 text-2xl font-bold w-8 h-8 flex items-center justify-center z-10"
+                    className="absolute top-2 right-3 text-white hover:text-gray-200 text-xl font-bold w-8 h-8 flex items-center justify-center z-10"
                 >
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -58,12 +58,12 @@ const PopUpContact = () => {
                 {/* Content */}
                 <div className="p-6">
                     {/* Headline */}
-                    <h2 className="text-2xl font-bold text-gray-800 mb-3 text-center">
+                    <h2 className="text-xl font-bold text-gray-800 mb-3 text-center">
                         Get your dream trip planned by experts
                     </h2>
 
                     {/* Description */}
-                    <p className="text-gray-600 text-center mb-6">
+                    <p className="text-gray-600 text-sm text-center mb-6">
                         Receive a personalized travel itinerary and a free consultation with our travel advisors.
                     </p>
 
@@ -110,7 +110,7 @@ const PopUpContact = () => {
                         {/* Submit Button */}
                         <button
                             type="submit"
-                            className="w-full bg-[#8B4513] text-white py-3 px-6 rounded-lg font-bold text-lg uppercase tracking-wide hover:bg-[#654321] transition-colors duration-300"
+                            className="w-full bg-[#8B4513] text-white py-3 px-6 rounded-lg font-bold text-md uppercase tracking-wide hover:bg-[#654321] transition-colors duration-300"
                         >
                             Submit
                         </button>

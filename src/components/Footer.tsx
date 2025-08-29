@@ -14,7 +14,7 @@ const Footer = () => {
             { name: "Ladakh Tour", link: "/tours/ladakh" },
             { name: "Lumbini Tour", link: "/tours/lumbini" },
             { name: "Nalanda Tour", link: "/tours/nalanda" },
-            { name: "Tabo Tour", link: "/tours/tabo" },
+            { name: "Tabo Tour", link: "/tours/tabo-monastery" },
             { name: "Tawang Tour", link: "/tours/tawang" }
         ],
         ourPackages: [

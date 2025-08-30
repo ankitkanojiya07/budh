@@ -20,6 +20,8 @@ const navigationItems = [
   { name: "About", link: "/about" },
   { name: "Tours", link: "/allTours" },
   { name: "Contact", link: "/contact" },
+  { name: "Blogs", link: "/blogs" },
+  { name: "Packages", link: "/tours" },
 ];
 export default function HeaderNew() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -48,8 +50,8 @@ export default function HeaderNew() {
             // className={`${isContactPage ? "text-black" : ""}`}
           />
           <div className="flex items-center gap-4">
-            <NavbarButton as={Link} variant="primary" href="/contact">
-              Contact Us
+            <NavbarButton as={Link} variant="primary" href="/heritage-map">
+              Heritage Map
             </NavbarButton>
           </div>
         </NavBody>
@@ -80,11 +82,11 @@ export default function HeaderNew() {
             <div className="flex flex-col gap-3 pt-4 border-t border-neutral-200 dark:border-neutral-800">
               <NavbarButton 
                 variant="primary" 
-                href="/contact"
+                href="/heritage-map"
                 className="w-full justify-center"
                 onClick={closeMobileMenu}
               >
-                Contact Us
+                Heritage Map
               </NavbarButton>
             </div>
           </div>

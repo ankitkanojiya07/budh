@@ -332,14 +332,14 @@ const Locations = () => {
 
     return (
         <div className="w-full flex flex-col items-center justify-center py-8 sm:py-12 relative">
-            <div className="text-center mb-8">
+            {/*<div className="text-center mb-8">
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-im-orange mb-4">
                     Interactive Heritage Map
                 </h2>
                 <p className="text-gray-600 max-w-2xl mx-auto px-4">
                     Hover over any state to see it come to life! Click to explore Buddhist heritage sites and monuments across India
                 </p>
-            </div>
+            </div>*/}
 
             <div ref={containerRef} className="relative mx-auto flex items-center justify-center w-full" />
 

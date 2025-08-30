@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95acd091-40da-48a7-aa3d-4432e2168454" name="Changes" comment="~ RW--">
-      <change afterPath="$PROJECT_DIR$/src/content-data/trips-data/sanchi-tour.json" afterDir="false" />
+    <list default="true" id="95acd091-40da-48a7-aa3d-4432e2168454" name="Changes" comment="~ footer dangling links fixed">
+      <change afterPath="$PROJECT_DIR$/src/app/blogs/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/heritage-map/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/contact/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/contact/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/tours/[tourId]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/tours/[tourId]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PopUpContact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PopUpContact.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PopularTourBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PopularTourBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header-new.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header-new.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/locations.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/locations.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -33,12 +37,12 @@
     &quot;assignee&quot;: &quot;Soumay-Sanpui&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ankitkanojiya07/budh.git",
-    "accountId": "263eb4f7-d995-4afa-9fd6-8e5f0439915a"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ankitkanojiya07/budh.git&quot;,
+    &quot;accountId&quot;: &quot;263eb4f7-d995-4afa-9fd6-8e5f0439915a&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -47,29 +51,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Notification.DisplayName-DoNotAsk-GitHub Copilot": "GitHub Copilot",
-    "Notification.DoNotAsk-GitHub Copilot": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "js.debugger.nextJs.config.created.client": "true",
-    "js.debugger.nextJs.config.created.server": "true",
-    "last_opened_file_path": "S:/work/budh",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "pnpm",
-    "npm.Dev.executor": "Run",
-    "settings.editor.selected.configurable": "terminal",
-    "ts.external.directory.path": "S:\\work\\budh\\node_modules\\typescript\\lib"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Notification.DisplayName-DoNotAsk-GitHub Copilot&quot;: &quot;GitHub Copilot&quot;,
+    &quot;Notification.DoNotAsk-GitHub Copilot&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
+    &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;S:/work/budh&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;pnpm&quot;,
+    &quot;npm.Dev.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;S:\\work\\budh\\node_modules\\typescript\\lib&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="S:\work\bt\src\utils" />
@@ -104,8 +108,8 @@
     </configuration>
     <list>
       <item itemvalue="JavaScript Debug.Next.js: debug client-side" />
-      <item itemvalue="npm.Next.js: server-side" />
       <item itemvalue="npm.Dev" />
+      <item itemvalue="npm.Next.js: server-side" />
     </list>
   </component>
   <component name="SharedIndexes">
@@ -139,7 +143,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756216348331</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="~ footer dangling links fixed">
+      <option name="closed" value="true" />
+      <created>1756463470144</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1756463470144</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +171,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Build Fix 2" />
     <MESSAGE value="~ RW--" />
-    <option name="LAST_COMMIT_MESSAGE" value="~ RW--" />
+    <MESSAGE value="~ footer dangling links fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="~ footer dangling links fixed" />
   </component>
 </project>

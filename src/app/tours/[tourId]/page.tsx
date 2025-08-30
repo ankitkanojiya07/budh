@@ -128,7 +128,7 @@ const tripsDataList = [
 ];
 
 function DayProgram({ program, index }: { program: DayProgram; index: number }) {
-    const [isExpanded, setIsExpanded] = useState(false);
+    const [isExpanded, setIsExpanded] = useState(true);
     const contentRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -159,7 +159,7 @@ function DayProgram({ program, index }: { program: DayProgram; index: number }) 
         <div className="border-b cursor-pointer">
             <button
                 onClick={() => setIsExpanded(!isExpanded)}
-                className="w-full pl-4 py-3 flex items-center justify-between text-left hover:bg-pri-orange hover:text-white transition-colors"
+                className="cursor-pointer w-full pl-4 py-3 flex items-center justify-between text-left hover:bg-pri-orange hover:text-white transition-colors"
             >
                 <div className="flex items-center gap-4">
                     <div className="relative w-12 h-12 rounded-lg overflow-hidden flex-shrink-0">
@@ -179,18 +179,10 @@ function DayProgram({ program, index }: { program: DayProgram; index: number }) 
                 </span>
             </button>
             {isExpanded && (
-                <div ref={contentRef} className="p-4 pt-4 border-t border-pri-brown/20">
+                <div ref={contentRef} className="p-4 pt-4">
                     <div className="flex flex-col lg:flex-row gap-4">
                         <div className="flex-1">
                             <p className="text-gray-600 text-justify text-sm sm:text-base">{program.desc}</p>
-                        </div>
-                        <div className="relative w-full lg:w-48 h-32 lg:h-48 rounded-lg overflow-hidden flex-shrink-0">
-                            <Image
-                                src={dayImage}
-                                alt={`Day ${program.day} - ${program.title || 'Program'}`}
-                                fill
-                                className="object-cover"
-                            />
                         </div>
                     </div>
                 </div>
@@ -263,7 +255,7 @@ export default function TourDetailPage() {
                         <section className="relative bg-gray-50 p-6 rounded-lg overflow-hidden">
                             {/* Background watermarks */}
                             <div id='f-wtrmrk' className="absolute inset-0 bg-[url('/bt.png')] bg-contain bg-center bg-no-repeat opacity-10 pointer-events-none" ></div>
-                            <div id='s-wtrmrk' className="absolute -bottom-[13vh] -right-[10vh] w-40 h-40 sm:w-56 sm:h-56 bg-[url('/lotus/buddh_1.png')] bg-no-repeat bg-right-bottom bg-contain opacity-30 pointer-events-none"></div>
+                            {/*<div id='s-wtrmrk' className="absolute -bottom-[13vh] -right-[10vh] w-40 h-40 sm:w-56 sm:h-56 bg-[url('/lotus/buddh_1.png')] bg-no-repeat bg-right-bottom bg-contain opacity-30 pointer-events-none"></div>*/}
                             
                             {/* Content with relative positioning */}
                             <div className="relative z-10">

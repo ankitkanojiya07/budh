@@ -9,7 +9,8 @@ import Hero3 from "@/components/Hero3";
 export default function Home() {
   return (
       <main className="selection:bg-pri-brown selection:text-white overflow-x-hidden">
-        <Hero3 />
+        {/*<Hero3 />*/}
+        <Hero2 />
         <Journey />
         <ContactBar />
         <PopularTourBar />

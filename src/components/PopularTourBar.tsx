@@ -64,7 +64,7 @@ const PopularTourBar = () => {
                                         aria-label={tour.name}
                                     >
                                         {/* Image Section */}
-                                        <div className="relative h-64 sm:h-[40vh] md:h-[75vh] overflow-hidden rounded-lg">
+                                        <div className="relative h-64 sm:h-[40vh] md:h-[75vh] md:max-h-[489px] overflow-hidden rounded-lg">
                                             <img
                                                 src={`/${tour.image}`}
                                                 alt={tour.name}

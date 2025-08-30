@@ -4,7 +4,6 @@ import {useEffect, useRef} from "react";
 import ContactForm from "@/components/ContactForm";
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/dist/ScrollTrigger";
-import Locations from "@/components/locations";
 
 const page = () => {
     const inquiryGridRef = useRef<HTMLDivElement>(null);
@@ -110,7 +109,6 @@ const page = () => {
             {/* Contact Components */}
             {/* <ContactBar /> */}
             <ContactForm />
-            <Locations />
         </main>
     )
 }

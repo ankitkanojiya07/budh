@@ -11,6 +11,77 @@ export type HeritageSite = {
 export type HeritageMapping = Record<string, HeritageSite[]>;
 
 export const HERITAGE_BY_STATE: HeritageMapping = {
+  "Rajasthan": [
+    {
+      name: "Bhimsagar Ruins",
+      description: "Ruins of an ancient Buddhist site, believed to be a significant monastic settlement with stupas and relics.",
+      historicalSignificance: "Site of ancient Buddhist settlements and artifacts, providing evidence of Buddhism's spread in Rajasthan.",
+      location: "Baran district",
+      type: "ruins",
+      period: "2nd century BCE - 5th century CE",
+    },
+    {
+      name: "Kolvi Rock Caves",
+      description: "A group of rock-cut Buddhist caves, including viharas and stupas, carved into laterite hills.",
+      historicalSignificance: "Largest group of Buddhist caves in Rajasthan, reflecting the region's importance as a Buddhist center during the early centuries CE.",
+      location: "Kolvi, Jhalawar district",
+      type: "cave",
+      period: "5th-7th century CE",
+    }
+  ],
+  "Gujarat": [
+    {
+      name: "Junagadh",
+      description: "Ancient city with Buddhist caves, stupas, and inscriptions, including the famous Uparkot caves and Ashokan edicts.",
+      historicalSignificance: "A major center of Buddhist activity in western India, with evidence of monastic life and royal patronage.",
+      location: "Junagadh district",
+      type: "cave",
+      period: "3rd century BCE - 4th century CE",
+    },
+    {
+      name: "Vadnagar",
+      description: "Ancient city with significant Buddhist heritage, home to several stupas and monasteries.",
+      historicalSignificance: "Important center of Buddhist learning and culture in ancient India.",
+      location: "Mehsana district",
+      type: "site",
+      period: "2nd century BCE - 7th century CE",
+    },
+    {
+      name: "Devni Mori",
+      description: "Archaeological site with ancient Buddhist stupas and relic caskets, including a stupa believed to have housed Buddha's relics.",
+      historicalSignificance: "Key site for understanding the spread of Buddhism in western India; yielded relics and inscriptions.",
+      location: "Sabarkantha district",
+      type: "stupa",
+      period: "3rd-4th century CE",
+    },
+    {
+      name: "Talaja",
+      description: "Site of ancient Buddhist rock-cut caves, including chaityas and viharas carved into a hill.",
+      historicalSignificance: "Represents the spread of Buddhist monastic architecture in the Saurashtra region.",
+      location: "Bhavnagar district",
+      type: "cave",
+      period: "2nd century BCE - 2nd century CE",
+    }
+  ],
+  "Andhra Pradesh": [
+    {
+      name: "Amaravati Stupa",
+      description: "Ancient city with a rich Buddhist heritage, known for its stupas and sculptures.",
+      historicalSignificance: "Major center of Buddhist art and culture during the Satavahana period.",
+      location: "Amaravati, Guntur district",
+      type: "site",
+      period: "2nd century BCE - 3rd century CE",
+      unescoStatus: "Tentative List"
+    },
+    {
+      name: "Udaigiri",
+      description: "Ancient Buddhist monastic complex with stupas, monasteries, and sculptures.",
+      historicalSignificance: "Important center of Buddhist learning and culture in ancient India.",
+      location: "Nagarjunakonda, Guntur district",
+      type: "ruins",
+      period: "3rd-7th century CE"
+    }
+  ],
   "Uttar Pradesh": [
     {
       name: "Kapilavastu",
@@ -159,6 +230,14 @@ export const HERITAGE_BY_STATE: HeritageMapping = {
       location: "Tawang district",
       type: "monastery",
       period: "17th century CE onwards"
+    },
+    {
+        name: "Bomdila",
+        description: "Town with significant Buddhist heritage, home to several monasteries and stupas.",
+        historicalSignificance: "Important center of Buddhist culture in Arunachal Pradesh.",
+        location: "Bomdila, West Kameng district",
+        type: "monastery",
+        period: "18th century CE onwards"
     }
   ],
   "Odisha": [

@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95acd091-40da-48a7-aa3d-4432e2168454" name="Changes" comment="~ footer dangling links fixed">
-      <change afterPath="$PROJECT_DIR$/src/app/blogs/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/heritage-map/page.tsx" afterDir="false" />
+    <list default="true" id="95acd091-40da-48a7-aa3d-4432e2168454" name="Changes" comment="+ Blogs and Packages links to header; update Heritage Map button">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/contact/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/contact/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/blogs/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/blogs/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/tours/[tourId]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/tours/[tourId]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PopularTourBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PopularTourBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header-new.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header-new.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/locations.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/locations.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content-data/heritage-mapping.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/content-data/heritage-mapping.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +146,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756463470144</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="+ Blogs and Packages links to header; update Heritage Map button">
+      <option name="closed" value="true" />
+      <created>1756568569742</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1756568569742</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +175,7 @@
     <MESSAGE value="Build Fix 2" />
     <MESSAGE value="~ RW--" />
     <MESSAGE value="~ footer dangling links fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="~ footer dangling links fixed" />
+    <MESSAGE value="+ Blogs and Packages links to header; update Heritage Map button" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ Blogs and Packages links to header; update Heritage Map button" />
   </component>
 </project>

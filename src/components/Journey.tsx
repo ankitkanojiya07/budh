@@ -1,23 +1,32 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from "next/image";
 
-const sectionRenderer = (data: any, isImageLeft: boolean) => {
+const sectionRenderer = (data: any) => {
     return (
-        <div className={`bg-dim-pink min-w-full w-full flex flex-col lg:flex-row ${isImageLeft ? 'lg:flex-row-reverse' : ''} w-full`}>
-            {/* Left Section - Content */}
-            <div id={"j-left"} className={`w-full lg:w-1/2 p-8 flex flex-col justify-center gap-4 order-1 lg:order-1`}>
-                <p className={"text-base md:text-lg lg:text-xl"}>{data.smallHeading}</p>
-                <h2 className={"bg-gradient-to-r from-orange-700 via-amber-600 to-orange-800 bg-clip-text text-transparent mb-4 font-serif text-2xl sm:text-3xl md:text-4xl leading-tight font-semibold"}>{data.mainHeadingL1} {data.mainHeadingL2}</h2>
-                <div>
-                    <p className={"text-justify mb-4 md:mb-6 text-medium w-full lg:w-[90%] lg:pr-6"}>{data.desc}</p>
-                    <Link href="/allTours" className={"px-4 md:px-6 py-2 text-base text-white bg-im-orange cursor-pointer hover:bg-im-orange/90 transition-colors duration-300"}>{data.btnText}</Link>
-                </div>
+        <div className="w-full max-w-sm lg:max-w-md xl:max-w-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col gap-6 h-full">
+            {/* Image Section */}
+            <div className="relative h-48 sm:h-56 lg:h-64 w-full flex-shrink-0">
+                <Image
+                    src={data.imgSrc}
+                    alt={data.mainHeadingL1}
+                    fill
+                    className="object-cover"
+                />
             </div>
-            {/* Right Section - image */}
-            <div id={"j-right"} className={"w-full lg:w-1/2 order-2 lg:order-2"}>
-                <div className="w-full aspect-[16/9]">
-                    <img src={data.imgSrc} className={"w-full h-full object-cover"} alt={data.smallHeading}/>
-                </div>
+
+            {/* Content Section */}
+            <div className="p-4 sm:p-5 lg:p-6 flex flex-col gap-4 flex-grow text-center">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold  bg-gradient-to-r from-orange-700 via-amber-600 to-orange-800 bg-clip-text text-transparent font-serif mb-2 leading-tight">
+                    {data.mainHeadingL1} {data.mainHeadingL2}
+                </h3>
+                <p className="text-sm sm:text-base text-gray-600 mb-4 leading-relaxed flex-grow">
+                    {data.desc}
+                </p>
+                
+                <button className="w-full bg-im-orange text-white font-medium py-2 px-4 transition-all duration-200 transform hover:scale-105 focus:outline-none focus:ring-2 cursor-pointer mt-auto">
+                    {data.btnText}
+                </button>
             </div>
         </div>
     );
@@ -44,11 +53,23 @@ const Journey = () => {
     };
 
     return (
-        <div className={"w-full min-h-screen font-cormorant"}>
-            {/* Journey Section */}
-            {sectionRenderer(data.journeyData,false)}
-            {/* Discover Section */}
-            {sectionRenderer(data.discoverData,true)}
+        <div className={"bg-dim-pink w-full font-cormorant p-4 py-24"}>
+            <div className="w-full px-4 sm:px-6 overflow-hidden">
+                <div className="mx-auto max-w-7xl mb-8 px-2 sm:px-4 lg:px-6">
+                    <h2 className="text-3xl text-left sm:text-4xl md:text-5xl lg:text-6xl bg-gradient-to-r from-orange-700 via-amber-600 to-orange-800 bg-clip-text text-transparent font-serif">
+                        Discover Your Path
+                    </h2>
+                    <p className="">
+                        Embark on a journey of self-discovery and mindfulness.
+                    </p>
+                </div>
+            </div>
+            <section className={"w-full grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 justify-items-center max-w-6xl mx-auto"}>
+                {/* Journey Section */}
+                {sectionRenderer(data.journeyData)}
+                {/* Discover Section */}
+                {sectionRenderer(data.discoverData)}
+            </section>
         </div>
     );
 };

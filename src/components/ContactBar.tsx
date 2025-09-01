@@ -48,7 +48,7 @@ const ContactBar = () => {
   return (
     <div
       className={
-        "w-full bg-[url('/hero2/5.jpeg')] text-white bg-cover bg-center bg-no-repeat bg-fixed"
+        "w-full bg-[url('/hero2/12.jpeg')] text-white bg-cover bg-center bg-no-repeat bg-fixed"
       }
     >
       <div className={"px-4 sm:px-6 lg:px-8 py-16 sm:py-24"}>

@@ -33,3 +33,41 @@
 .right-card-buddha-life::before {
     @apply absolute content-[""] opacity-50 -z-1 top-[69.4%] -right-[8%] size-50 bg-[url(/lotus/buddh_1.png)] bg-center bg-no-repeat bg-contain;
 }
+
+/* Enhanced mobile optimization */
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Carousel specific fixes */
+#slider-panel {
+    width: 100%;
+    position: relative;
+}
+
+.event-block {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    box-sizing: border-box;
+}
+
+.event-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Prevent overscrolling on mobile */
+@media (max-width: 768px) {
+    body {
+        overscroll-behavior: none;
+        -webkit-overflow-scrolling: touch;
+    }
+}

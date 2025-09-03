@@ -36,7 +36,7 @@ const Footer = () => {
     };
 
     return (
-        <footer className="bg-[url('/tour-package-header-images/4.jpeg')] text-white bg-cover bg-center bg-no-repeat bg-fixed pb-8 md:pb-16 pt-4 relative overflow-hidden">
+        <footer className="bg-[url('/hero2/1122.jpg')] text-white bg-cover bg-center bg-no-repeat bg-fixed pb-8 md:pb-16 pt-4 relative overflow-hidden">
             {/* Black overlay */}
             <div className="absolute inset-0 bg-black/50 z-0"></div>
             

@@ -38,7 +38,7 @@ const PopUpContact = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed inset-0  flex items-center justify-center z-50 p-4">
+    <div className="fixed inset-0  flex items-center justify-center z-100 p-4">
       <div className="bg-[#F5F5DC] rounded-lg shadow-2xl max-w-md w-full relative">
         {/* Close Button */}
         <button

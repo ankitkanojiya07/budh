@@ -22,6 +22,7 @@ const navigationItems = [
   { name: "Collections", link: "/tours" },
   { name: "Blogs", link: "/blogs" },
   { name: "Contact", link: "/contact" },
+  { name: "Heritage Map", link: "/heritage-map" },
 ];
 export default function HeaderNew() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -48,11 +49,11 @@ export default function HeaderNew() {
             isContactPage={isContactPage}
             // className={`${isContactPage ? "text-black" : ""}`}
           />
-          <div className="flex items-center gap-4">
+          {/* <div className="flex items-center gap-1 sm:gap-2 flex-shrink-0">
             <NavbarButton as={Link} variant="primary" href="/heritage-map">
-              Heritage Map
+               Heritage Map
             </NavbarButton>
-          </div>
+          </div> */}
         </NavBody>
         <MobileNav>
           <MobileNavHeader>
@@ -69,12 +70,12 @@ export default function HeaderNew() {
                   key={index}
                   href={item.link}
                   onClick={closeMobileMenu}
-                  className="text-lg font-medium text-neutral-600 hover:text-neutral-800 dark:text-neutral-300 dark:hover:text-neutral-100 transition-colors duration-200"
+                  className="text-lg font-medium text-neutral-600 hover:text-neutral-800 transition-colors duration-200"
                 >
                   {item.name}
                 </Link>
               ))}
-              <div className="flex flex-col gap-3 pt-4 border-t border-[#cf4f21]">
+              {/* <div className="flex flex-col gap-3 pt-4 border-t border-[#cf4f21]">
                 <NavbarButton
                   variant="primary"
                   href="/heritage-map"
@@ -83,7 +84,7 @@ export default function HeaderNew() {
                 >
                   Heritage Map
                 </NavbarButton>
-              </div>
+              </div> */}
             </div>
           </MobileNavMenu>
         </MobileNav>

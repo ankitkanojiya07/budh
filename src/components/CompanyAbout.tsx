@@ -119,7 +119,7 @@ const CompanyAbout = () => {
                 className="w-full lg:w-80 xl:w-96 h-48 sm:h-56 lg:h-64 xl:h-72 relative overflow-hidden rounded-lg shadow-lg order-1 lg:order-2 flex-shrink-0"
               >
                 <Image
-                  src="/popular-tour/27.jpg"
+                  src="/hero2/119.jpg"
                   alt="Buddha Statue"
                   fill
                   className="object-cover"
@@ -161,7 +161,7 @@ const CompanyAbout = () => {
                 className="w-full lg:w-80 xl:w-96 h-48 sm:h-56 lg:h-64 xl:h-72 relative overflow-hidden rounded-lg shadow-lg order-1 lg:order-2 flex-shrink-0"
               >
                 <Image
-                  src="/popular-tour/34.jpg"
+                  src="/hero2/114.jpg"
                   alt="Buddhist Monk"
                   fill
                   className="object-cover"

@@ -99,13 +99,13 @@ const PopularTourBar = () => {
       </div>
       <div className="mt-10 flex flex-col sm:flex-row gap-4 items-stretch sm:items-center">
         <Link
-          className="bg-im-orange hover:bg-pri-orange cursor-pointer text-white px-4 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3 text-sm sm:text-base md:text-lg hover:bg-opacity-90 transition-all duration-300 w-full sm:w-auto text-center"
+          className="bg-im-orange hover:bg-pri-orange cursor-pointer text-white px-4 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3 text-sm sm:text-base md:text-lg hover:bg-opacity-90 rounded-lg transition-all duration-300 w-full sm:w-auto text-center"
           href="/allTours"
         >
           View All Destinations
         </Link>
         <Link
-          className="bg-im-orange hover:bg-pri-orange cursor-pointer text-white px-4 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3 text-sm sm:text-base md:text-lg hover:bg-opacity-90 transition-all duration-300 w-full sm:w-auto text-center"
+          className="bg-im-orange hover:bg-pri-orange cursor-pointer text-white px-4 sm:px-6 md:px-8 py-2 sm:py-2.5 md:py-3 text-sm sm:text-base md:text-lg hover:bg-opacity-90 rounded-lg transition-all duration-300 w-full sm:w-auto text-center"
           href="/tours"
         >
           View All Packages

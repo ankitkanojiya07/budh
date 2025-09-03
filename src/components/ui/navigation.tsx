@@ -99,10 +99,7 @@ export const NavBody = ({ children, className, visible = false }: NavBodyProps) 
         stiffness: 200,
         damping: 50,
       }}
-      style={{
-        minWidth: "800px",
-      }}
-      className={`relative z-[60] mx-auto hidden w-full max-w-7xl flex-row items-center justify-between self-start rounded-full bg-transparent px-4 py-2 lg:flex dark:bg-transparent ${
+      className={`relative z-[60] mx-auto hidden w-full max-w-7xl flex-row items-center justify-between self-start rounded-full bg-transparent px-1 sm:px-2 md:px-4 py-2 lg:flex dark:bg-transparent gap-1 sm:gap-2 ${
         visible ? "bg-white/80 dark:bg-neutral-950/80" : ""
       } ${className}`}
     >
@@ -124,13 +121,13 @@ export const NavItems = ({ items, className, onItemClick, visible = false , isCo
   return (
     <motion.div
       onMouseLeave={() => setHovered(null)}
-      className={`absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-2 text-sm font-medium transition duration-200 lg:flex lg:space-x-2 ${visible ? "text-[#ca3600]" : "text-white"} ${className}`}
+      className={`hidden flex-1 flex-row items-center justify-center space-x-1 sm:space-x-2 text-sm font-medium transition duration-200 lg:flex ${visible ? "text-[#ca3600]" : "text-white"} ${className}`}
     >
       {items.map((item, idx) => (
         <Link
           onMouseEnter={() => setHovered(idx)}
           onClick={onItemClick}
-          className={`relative px-4 py-2 hover:text-[#ca3600] transition-all text-lg ${visible ? "text-[#ca3600]" : isContactPage ? "text-black"   : "text-white"}`}
+          className={`relative px-1 sm:px-2 md:px-3 lg:px-2.5 py-1 hover:text-[#ca3600] transition-all text-xs sm:text-sm md:text-base lg:text-base whitespace-nowrap ${visible ? "text-[#ca3600]" : isContactPage ? "text-black"   : "text-white"}`}
           key={`link-${idx}`}
           href={item.link}
         >
@@ -226,18 +223,18 @@ export const NavbarLogo = ({ visible = false , isContactPage}: { visible?: boole
   return (
     <Link
       href="/"
-      className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal"
+      className="relative z-20 flex items-center space-x-1 sm:space-x-2 px-1 py-1 text-sm font-normal flex-shrink-0 min-w-0"
     >
-      <div>
+      <div className="flex-shrink-0">
         <img
           src="/header/buddha_face.png"
           alt="Buddha Face Logo"
-          width={30}
-          height={30}
-          className="rounded-full"
+          width={20}
+          height={20}
+          className="rounded-full w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
         />
       </div>
-      <span className={`md:text-2xl text-base font-bold transition-colors duration-200 ${visible ? "text-[#ca3600] text-xl" :     isContactPage ? "text-black" : "text-white"}`}>
+      <span className={`text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold transition-colors duration-200 whitespace-nowrap flex-shrink-0 ${visible ? "text-[#ca3600]" : isContactPage ? "text-black" : "text-white"}`}>
         Buddhist Tour
       </span>
     </Link>
@@ -264,7 +261,7 @@ export const NavbarButton = ({
   | React.ComponentPropsWithoutRef<"button">
 )) => {
   const baseStyles =
-    "px-4 py-2 rounded-md button text-sm font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center";
+    "px-1 sm:px-2 md:px-3 py-1 rounded-md button text-xs sm:text-sm font-bold relative cursor-pointer hover:-translate-y-0.5 transition duration-200 inline-block text-center whitespace-nowrap flex-shrink-0";
 
   const variantStyles = {
     primary:

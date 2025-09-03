@@ -48,10 +48,13 @@ const ContactBar = () => {
   return (
     <div
       className={
-        "w-full bg-[url('/hero2/12.jpeg')] text-white bg-cover bg-center bg-no-repeat bg-fixed"
+        "w-full bg-[url('/hero2/117.jpg')] text-white bg-cover bg-center bg-no-repeat bg-fixed relative"
       }
     >
-      <div className={"px-4 sm:px-6 lg:px-8 py-16 sm:py-24"}>
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/40"></div>
+      
+      <div className={"px-4 sm:px-6 lg:px-8 py-16 sm:py-24 relative z-10"}>
         <div
           ref={containerRef}
           className={
@@ -69,8 +72,8 @@ const ContactBar = () => {
                 <div className={"relative w-16 h-16 sm:w-20 sm:h-20"}>
                   <Image src={item.icn} fill alt={item.title} />
                 </div>
-                <h3 className={"text-xl md:text-2xl"}>{item.title}</h3>
-                <p className={"text-sm md:text-base"}>{item.desc}</p>
+                <h3 className={"text-xl font-bold md:text-2xl"}>{item.title}</h3>
+                <p className={"text-sm -mt-4 md:text-base"}>{item.desc}</p>
               </div>
             ))}
         </div>

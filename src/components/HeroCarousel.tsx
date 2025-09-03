@@ -157,7 +157,7 @@ const HeroCarousel = ({
               loading={index === 0 ? "eager" : "lazy"}
               decoding="async"
             />
-            <Overlay opacity={30} className="bg-blend-overlay" />
+            <Overlay opacity={50} className="bg-blend-overlay" />
             <div
               ref={(el) => {
                 descriptionRefs.current[index] = el;
@@ -171,18 +171,15 @@ const HeroCarousel = ({
               <h3
                 className={"text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-4"}
                 style={{
-                  color: "#c8693a",
-                  textShadow: "2px 2px 4px rgba(0, 0, 0, 0.7)",
+                  color: "white",
                 }}
               >
                 {carousel.title}
               </h3>
               <p
-                className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto"
+                className="text-sm sm:text-base md:text-lg -mt-5 lg:text-xl leading-relaxed max-w-2xl mx-auto"
                 style={{
-                  color: "#c8693a",
-                  fontWeight: "bold",
-                  textShadow: "1px 1px 2px rgba(0, 0, 0, 0.5)",
+                  color: "white",
                 }}
               >
                 {carousel.desc}

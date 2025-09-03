@@ -21,6 +21,7 @@ type ModalState = {
 
 const Locations = () => {
     const containerRef = useRef<HTMLDivElement>(null);
+    const tooltipRef = useRef<HTMLDivElement>(null);
     const [tooltip, setTooltip] = useState<TooltipState>({
         visible: false,
         x: 0,
@@ -223,7 +224,11 @@ const Locations = () => {
 
         // Close tooltip/modal when clicking outside
         const handleOutsideClick = (ev: MouseEvent) => {
-            if (!containerRef.current?.contains(ev.target as Node)) {
+            const target = ev.target as Node;
+            const isInsideMap = containerRef.current?.contains(target);
+            const isInsideTooltip = tooltipRef.current?.contains(target);
+            
+            if (!isInsideMap && !isInsideTooltip) {
                 setTooltip(t => ({ ...t, visible: false }));
                 setSelectedState(null);
                 setModal(m => ({ ...m, visible: false }));
@@ -346,15 +351,27 @@ const Locations = () => {
             {/* Desktop Tooltip */}
             {tooltip.visible && !isMobile && (
                 <div
-                    className="absolute z-20 bg-white border-2 border-im-orange shadow-2xl rounded-lg p-4 w-80"
+                    ref={tooltipRef}
+                    className="tooltip-container absolute z-20 bg-white border-2 border-im-orange shadow-2xl rounded-lg p-4 w-80"
                     style={{ 
                         left: tooltip.x,
                         top: tooltip.y,
                         filter: 'drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1))'
                     }}
                 >
-                    <div className="font-bold text-lg text-im-orange mb-3 border-b border-gray-200 pb-2">
-                        {tooltip.stateName}
+                    <div className="flex justify-between items-center mb-3 border-b border-gray-200 pb-2">
+                        <div className="font-bold text-lg text-im-orange">
+                            {tooltip.stateName}
+                        </div>
+                        <button
+                            onClick={() => {
+                                setTooltip(t => ({ ...t, visible: false }));
+                                setSelectedState(null);
+                            }}
+                            className="text-gray-400 hover:text-gray-600 text-xl font-bold leading-none"
+                        >
+                            ×
+                        </button>
                     </div>
                     {tooltip.heritageSites.length > 0 ? (
                         <div className="space-y-3">
@@ -386,7 +403,7 @@ const Locations = () => {
 
             {/* Mobile Modal */}
             {modal.visible && isMobile && (
-                <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+                <div className="fixed inset-0 z-100 bg-black/40 backdrop-blur-sm  flex items-center justify-center p-4">
                     <div className="bg-white rounded-lg shadow-2xl max-w-sm w-full max-h-[80vh] overflow-y-auto">
                         <div className="sticky top-0 bg-im-orange text-white p-4 rounded-t-lg">
                             <div className="flex justify-between items-center">
@@ -395,7 +412,7 @@ const Locations = () => {
                                     onClick={closeModal}
                                     className="text-white hover:text-gray-200 text-2xl font-bold"
                                 >
-                                    ×
+                                    X
                                 </button>
                             </div>
                         </div>

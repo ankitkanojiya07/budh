@@ -115,7 +115,7 @@ export const NavBody = ({ children, className, visible = false }: NavBodyProps) 
   );
 };
 
-export const NavItems = ({ items, className, onItemClick, visible = false , isContactPage}: NavItemsProps) => {
+export const NavItems = ({ items, className, onItemClick, visible = false , isContactPage=false}: NavItemsProps) => {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
@@ -144,7 +144,7 @@ export const NavItems = ({ items, className, onItemClick, visible = false , isCo
   );
 };
 
-export const MobileNav = ({ children, className, visible }: MobileNavProps) => {
+export const MobileNav = ({ children, className, visible=false }: MobileNavProps) => {
   return (
     <motion.div
       animate={{
@@ -234,7 +234,7 @@ export const NavbarLogo = ({ visible = false , isContactPage}: { visible?: boole
           className="rounded-full w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8"
         />
       </div>
-      <span className={`text-xs sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold transition-colors duration-200 whitespace-nowrap flex-shrink-0 ${visible ? "text-[#ca3600]" : isContactPage ? "text-black" : "text-white"}`}>
+      <span className={`text-xs max-sm:text-black! sm:text-sm md:text-base lg:text-xl xl:text-2xl font-bold transition-colors duration-200 whitespace-nowrap flex-shrink-0 ${visible ? "text-[#ca3600]" : isContactPage ? "text-black" : "text-white"}`}>
         Buddhist Tour
       </span>
     </Link>

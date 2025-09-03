@@ -27,7 +27,7 @@ const navigationItems = [
 export default function HeaderNew() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
-  const isContactPage = pathname === "/about";
+  const isContactPage = pathname === "/about" || pathname.includes("/tours") || pathname.includes("/blogs") || pathname.includes("/heritage-map");
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -75,16 +75,6 @@ export default function HeaderNew() {
                   {item.name}
                 </Link>
               ))}
-              {/* <div className="flex flex-col gap-3 pt-4 border-t border-[#cf4f21]">
-                <NavbarButton
-                  variant="primary"
-                  href="/heritage-map"
-                  className="w-full justify-center"
-                  onClick={closeMobileMenu}
-                >
-                  Heritage Map
-                </NavbarButton>
-              </div> */}
             </div>
           </MobileNavMenu>
         </MobileNav>

@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useGSAP, gsap } from "@/utils/gsapUtil";
 import { useIsMobile } from "@/hook/use-is-moble";
+import Image from "next/image";
 
 /* Overlay component to add a semi-transparent layer over images */
 const Overlay = ({
@@ -46,31 +47,6 @@ const HeroCarousel = ({
       carouselData.length
     );
   }, [carouselData]);
-
-  /*    useGSAP(() => {
-        gsap.from(imageRefs.current, {
-            opacity: 0,
-            y: 100,
-            duration: 2,
-            ease: "power2.out",
-            stagger: 0.2,
-        });
-    }, []);*/
-
-  /*    useGSAP(() => {
-        descriptionRefs.current.forEach((ref, index) => {
-            if (ref && carouselData[index].id === clickedEventId) {
-                gsap.from(ref,
-                    {
-                        opacity: 1,
-                        y: 0,
-                        duration: 0.6,
-                        ease: "power2.out"
-                    }
-                );
-            }
-        });
-    }, [clickedEventId]);*/
 
   const handleEventClick = (id: String) => {
     setClickedEventId(id);
@@ -136,7 +112,7 @@ const HeroCarousel = ({
           <div
             key={carousel.id}
             onClick={() => handleEventClick(carousel.id)}
-            className={`overflow-hidden event-block relative flex-shrink-0 ${
+            className={`overflow-hidden event-block relative aspect-video! flex-shrink-0 ${
               clickedEventId === carousel.id
                 ? "w-full h-full"
                 : "w-0 h-full"
@@ -147,15 +123,16 @@ const HeroCarousel = ({
               flex: clickedEventId === carousel.id ? '1 1 100%' : '0 0 0%'
             }}
           >
-            <img
+            <Image
               ref={(el) => {
                 imageRefs.current[index] = el;
               }}
               src={carousel.img}
               alt={carousel.title}
-              className="object-cover object-center w-full h-full relative z-0"
-              loading={index === 0 ? "eager" : "lazy"}
-              decoding="async"
+              className="object-contain aspect-video relative z-0"
+              priority
+              width={1000}
+              height={1000}
             />
             <Overlay opacity={50} className="bg-blend-overlay" />
             <div

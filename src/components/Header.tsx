@@ -7,21 +7,21 @@ import InfoCard from "./InfoCard";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
+const headerLinks: { title: string, link: string }[] = [
+    { title: "Home", link: "/" },
+    { title: "Tours", link: "/allTours" },
+    // { title: "Spiritual Journey", link: "/spiritual-journey" }, --> will be converted to logo
+    // { title: "Enquire", link: "/enquire" },
+    { title: "About", link: "/about" },
+    { title: "Contact", link: "/contact" }
+];
+
 const Header = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isContactPanelOpen, setIsContactPanelOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
     const navContainerRef = useRef<HTMLDivElement>(null);
     const pathname = usePathname();
-    
-    const headerLinks: { title: string, link: string }[] = [
-        { title: "Home", link: "/" },
-        { title: "Tours", link: "/allTours" },
-        // { title: "Spiritual Journey", link: "/spiritual-journey" }, --> will be converted to logo
-        // { title: "Enquire", link: "/enquire" },
-        { title: "About", link: "/about" },
-        { title: "Contact", link: "/contact" }
-    ];
 
     const isActiveLink = (link: string): boolean => {
         if (link === '/') {
